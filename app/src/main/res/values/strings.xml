@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">JREC app</string>
+    <string name="simple">aJREC</string>
+    <string name="simple1">baJREC</string>
+    <string name="simple2">sbasJREC</string>
+    <string name="simple3">aJRdfEC</string>
+    <string name="simple4">baJddREC</string>
+    <string name="simple5">sbgggaJREC</string>
+    <string name="simple6">aJefREC</string>
+    <string name="simple7">battJREC</string>
+    <string name="simple8">sbaerJREC</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_splashscreen">splashscreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="fab12">fab14</string>
+    <string name="fab2">fab114</string>
+
+    <string name="fab1">fab</string>
+</resources>

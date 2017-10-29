@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.education.rajneesh.jrec.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/pwd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F3F3"
+        android:elevation="4dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#F3F3F3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="18dp"
+                android:background="#F3F3F3"
+                android:fontFamily="sans-serif-condensed"
+
+
+
+
+                android:onClick="historyclick"
+                android:padding="4dp"
+                android:text="pwd courses"
+                android:textAllCaps="true"
+                android:textColor="#04ABB6"
+                android:textSize="25sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3F3F3"
+
+                android:textColor="#6B6B6B"
+                android:textSize="20sp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="8dp"
+                android:text="Certified by Ministry of Skill Development and Enterpreneurship. The candidae will get Rs.175/per day in his/her aadhar linked bank account as per the attendance who complete the traning programme and is successfully certified. The amount will be refunded to every candidate who completes the training programme and is successfully certified. Minimum attendance is 80%. The candidate should not have undergone any other skill training course sponsored by Govt. of India."
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="18dp"
+                android:background="#F3F3F3"
+                android:fontFamily="sans-serif-condensed"
+
+
+
+
+                android:onClick="historyclick"
+                android:padding="4dp"
+                android:text="Fees"
+                android:textAllCaps="true"
+                android:textColor="#04ABB6"
+                android:textSize="25sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3F3F3"
+
+                android:textColor="#6B6B6B"
+                android:textSize="20sp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="8dp"
+                android:text="Content Cost (to be given by Candidate at the beginning of training)"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="18dp"
+                android:background="#F3F3F3"
+                android:fontFamily="sans-serif-condensed"
+
+
+
+
+                android:onClick="historyclick"
+                android:padding="4dp"
+                android:text="job role"
+                android:textAllCaps="true"
+                android:textColor="#04ABB6"
+                android:textSize="25sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3F3F3"
+
+                android:textColor="#6B6B6B"
+                android:textSize="20sp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="8dp"
+                android:text="1.CRM Domestic Non- Voice\n2.Domestic Data Entry Operator\n3.Telecom In Store Promoter\n4.Customer Care Executive(Call Center)\n5.Trainee Associate\nDomestic Biometric Data Operator."
+                />
+
+
+        </LinearLayout>
+
+</ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
+

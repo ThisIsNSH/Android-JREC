@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_fab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.education.rajneesh.jrec.fab">
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="80dp"
+    android:layout_marginBottom="80dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f3f3f3"
+        android:orientation="vertical"
+        android:id="@+id/fabsurface">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/fab_pic"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fab_pic"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABC"
+        android:textSize="50sp"
+        android:layout_margin="16dp"
+        android:background="#00000000"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABC"
+        android:textSize="30sp"
+        android:layout_marginTop="-16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#00000000"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABC"
+        android:textSize="30sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="16dp"
+        android:background="#00000000"
+        android:textColor="#000000"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+android:id="@+id/fab_one"
+        android:transitionName="@string/fab12"
+        android:layout_marginTop="170dp"
+
+        android:layout_gravity="right">
+
+        <android.support.design.widget.FloatingActionButton
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="8dp"
+            android:onClick="fabclick1"
+
+            android:transitionName="@string/fab1"
+            ads:fabSize="normal"
+
+            ads:rippleColor="@color/colorAccenta" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:elevation="16dp"
+            android:text="+"
+android:id="@+id/text12"
+            android:textSize="30sp"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+
+</FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        ads:fabSize="normal"
+        ads:rippleColor="@color/colorPrimary"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="8dp"
+        android:id="@+id/fab1"
+        android:visibility="invisible"
+        android:elevation="8dp"/>
+
+</FrameLayout>

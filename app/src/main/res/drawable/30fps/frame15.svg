@@ -1,0 +1,23 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    id="vector"
+    width="24px"
+    height="24px">
+    <path
+        id="path"
+        d="M 7.136 8.049 C 12.946 5.237 16 6.656 17.634 6.893"
+        fill="none"
+        stroke="#000000"
+        stroke-width="2"
+        stroke-dasharray="7.769676751220516,3.0694060039602924"
+        stroke-dashoffset="8.5963193862096"/>
+    <path
+        id="path_1"
+        d="M 5.839 17.29 C 5.839 22.817 10 22.817 10 17.527 L 10 4"
+        fill="none"
+        stroke="#000000"
+        stroke-width="2"
+        stroke-dasharray="14.345098824201214,9.169548302438876"
+        stroke-dashoffset="14.345098824201214"/>
+</svg>

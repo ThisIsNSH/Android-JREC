@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.education.rajneesh.jrec.aboutus">
+
+    <LinearLayout
+        android:id="@+id/llaboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp"
+        android:background="#E1E6E5"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:transitionName="@string/simple2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/aboutus"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageview"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

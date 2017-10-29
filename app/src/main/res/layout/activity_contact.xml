@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.education.rajneesh.jrec.aboutus">
+
+    <LinearLayout
+        android:id="@+id/contact123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp"
+        android:background="#F3F3F3"
+        android:elevation="4dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="contact"
+            android:layout_marginLeft="18dp"
+            android:background="#F3F3F3"
+            android:textColor="#04ABB6"
+            android:textAllCaps="true"
+            android:layout_marginTop="8dp"
+
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:background="#F3F3F3"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="28dp"
+            android:textAllCaps="true"
+            android:textColor="#6B6B6B"
+            android:text="mobile: 9828275532 / 8005886307\nEMAIL:   jrec.singh@gmail.com"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="call us"
+            android:textAllCaps="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:background="@drawable/shape6"
+            android:textColor="#ffffff"
+            android:padding="4dp"
+android:id="@+id/contacts"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="contacts"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="location"
+            android:layout_marginLeft="18dp"
+            android:textAllCaps="true"
+            android:background="#F3F3F3"
+            android:textColor="#04ABB6"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:background="#F3F3F3"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="28dp"
+            android:textColor="#6B6B6B"
+            android:text="JREC Computer Education\n58, Mamta Bhawan\nShiv Nagar, Police Line\nBaran Road, Kota-1, Rajasthan, India"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="find on google maps"
+            android:textAllCaps="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:background="@drawable/shape6"
+            android:textColor="#ffffff"
+            android:padding="4dp"
+            android:elevation="4dp"
+            android:id="@+id/googlemaps"
+            android:layout_marginBottom="16dp"
+            android:onClick="googlemaps"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    id="vector"
+    width="24px"
+    height="24px">
+    <path
+        id="path"
+        d="M 10.732 5.407 C 15.489 6.085 15.915 11.574 10.426 12.745"
+        fill="none"
+        stroke="#000000"
+        stroke-width="2"/>
+    <path
+        id="path_1"
+        d="M 15 15 C 15 19 10 19 10 16 L 10 4.511"
+        fill="none"
+        stroke="#000000"
+        stroke-width="2"/>
+</svg>

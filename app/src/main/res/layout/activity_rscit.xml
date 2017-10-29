@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.education.rajneesh.jrec.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/rscit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#F3F3F3"
+        android:elevation="4dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#F3F3F3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="18dp"
+                android:background="#F3F3F3"
+                android:fontFamily="sans-serif-condensed"
+
+
+
+
+                android:onClick="historyclick"
+                android:padding="4dp"
+                android:text="rs-cit"
+                android:textAllCaps="true"
+                android:textColor="#04ABB6"
+                android:textSize="25sp"
+
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rscit"
+                android:layout_margin="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3F3F3"
+
+                android:textColor="#6B6B6B"
+                android:textSize="20sp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="8dp"
+                android:text="RS-CIT (Rajasthan State Certificate course in Information Technology) has been recognized by Dept. of Information Technology and Communication, Govt. of Rajasthan to propagate IT Literacy among the people of Rajasthan. In order to bridge the Digital Divide, RKCL has launched an IT friendly course for the people of Rajasthan. RS-CIT is a high quality and low cost IT literacy program which offers a novel curriculum, excellent study material and learning management system in both local Hindi language and English. A state-of-the-art delivery mechanism leads to State University governed Examination and Certification. Anyone who is literate and has keen desire to learn Computer - Information Technology is eligible for this. Course Duration – 3 Months or 132 Hours (2 hours per day – 1 Hour Practical and 1 Hour Theory). Course Medium – Hindi and English"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="18dp"
+                android:background="#F3F3F3"
+                android:fontFamily="sans-serif-condensed"
+
+
+
+
+                android:onClick="historyclick"
+                android:padding="4dp"
+                android:text="fees"
+                android:textAllCaps="true"
+                android:textColor="#04ABB6"
+                android:textSize="25sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3F3F3"
+
+                android:textColor="#6B6B6B"
+                android:textSize="20sp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginBottom="8dp"
+                android:text="Rs. 2850\nRs. 2700 (for Govt. Employee)"
+                />
+
+
+        </LinearLayout>
+
+</ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
+

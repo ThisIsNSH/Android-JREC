@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.education.rajneesh.jrec.MainActivity">
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/coursessurface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#F3F3F3"
+                android:elevation="4dp"
+                android:layout_centerVertical="true"
+                android:transitionName="@string/simple1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+
+                    <ImageView
+                        android:id="@+id/coursesimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/shape"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/courses" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/coursesimage"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="sans-serif-condensed"
+android:background="#00000000"
+                        android:text="Courses"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+
+                    android:background="#F3F3F3"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#F3F3F3"
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:onClick="rscitclick"
+                        android:padding="4dp"
+                        android:text="RS-CIT"
+                        android:textAllCaps="true"
+                        android:textColor="#04ABB6"
+                        android:textSize="20sp"
+
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#F3F3F3"
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:onClick="tallyclick"
+                        android:padding="4dp"
+                        android:text="TALLY -ERP 9"
+                        android:textAllCaps="true"
+                        android:textColor="#04ABB6"
+                        android:textSize="20sp"
+
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#F3F3F3"
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:onClick="hardclick"
+                        android:padding="4dp"
+                        android:text="HARDWARE NETWORKING"
+                        android:textAllCaps="true"
+                        android:textColor="#04ABB6"
+                        android:textSize="20sp"
+
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#F3F3F3"
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:onClick="pmkvyclick"
+                        android:padding="4dp"
+                        android:text="PMKVY (Skill Development Course)"
+
+                        android:textColor="#04ABB6"
+                        android:textSize="20sp"
+
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#F3F3F3"
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:onClick="pwdclick"
+                        android:padding="4dp"
+                        android:text="Persons with Disability Courses"
+android:textAllCaps="true"
+                        android:textColor="#04ABB6"
+                        android:textSize="20sp"
+
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+
+</ScrollView>
+            </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+

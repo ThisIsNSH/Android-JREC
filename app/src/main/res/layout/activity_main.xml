@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.education.rajneesh.jrec.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape5">
+
+                    <LinearLayout
+
+                        android:id="@+id/mainsurface"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/jrec"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="-10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="JREC "
+                                android:textAllCaps="true"
+                                android:textColor="#04ABB6"
+                                android:textSize="75sp"
+                                android:textStyle="bold|italic"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+
+                                    android:layout_toRightOf="@+id/jrec"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="computer"
+                                    android:textAllCaps="true"
+                                    android:textColor="#04ABB6"
+                                    android:textSize="30sp"
+
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="-11dp"
+                                    android:layout_toRightOf="@+id/jrec"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:text="education"
+                                    android:textAllCaps="true"
+                                    android:textColor="#04ABB6"
+                                    android:textSize="30sp"
+
+                                    android:textStyle="bold|italic" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-8dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="RSCIT-TALLY-hardware "
+                            android:textAllCaps="true"
+                            android:textColor="#0FE2F0"
+                            android:textSize="30sp"
+
+                            android:textStyle="italic" />
+                        <!--
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                                                android:layout_marginRight="8dp"
+
+                                                android:fontFamily="sans-serif-condensed"
+                                                android:text="We are since 16 years in computer education and with RKCL from 2009 we are giving education in RSCIT and other RKCL courses."
+                                                android:textAllCaps="false"
+                                                android:textColor="#000000"
+                                                android:textSize="20sp"
+                        android:textAlignment="center"
+                                                android:textStyle="italic" />-->
+
+
+                        <!--
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/digitalindia"
+                    android:layout_gravity="center_vertical"
+
+                    android:id="@+id/imageView" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nsdc"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/imageView2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pmkvy"
+                    android:layout_gravity="center_vertical"
+                   />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rscit"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/csc"
+                    android:layout_gravity="center_vertical"
+                   />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tally"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+        </HorizontalScrollView>-->
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/info1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:clickable="true"
+                        android:elevation="4dp"
+                        android:onClick="info2"
+                        android:padding="8dp"
+                        android:src="@drawable/info" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/aboutussurface"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape3"
+                    android:elevation="8dp"
+
+                    android:orientation="vertical"
+                    android:transitionName="@string/simple">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:id="@+id/aboutusimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="@drawable/shape"
+
+
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/aboutus" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/aboutusimage"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="sans-serif-condensed"
+
+                            android:text="About Us"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right">
+
+
+                        <TextView
+                            android:id="@+id/one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_margin="8dp"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:fontFamily="sans-serif-condensed"
+                            android:onClick="aboutexpand"
+                            android:padding="4dp"
+                            android:text="click to know more"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/ad1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Ad Space by Google\nLoading... "
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#C2C2C2"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+
+                    <com.google.android.gms.ads.NativeExpressAdView
+                        android:id="@+id/adView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="8dp"
+                        ads:adSize="320x150"
+                        ads:adUnitId="ca-app-pub-4207929380822734/6830567202">
+
+                    </com.google.android.gms.ads.NativeExpressAdView>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/coursessurface"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape3"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:transitionName="@string/simple1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:id="@+id/coursesimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="@drawable/shape"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/courses" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/coursesimage"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="sans-serif-condensed"
+
+                            android:text="Courses"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right">
+
+
+                        <TextView
+                            android:id="@+id/two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+
+                            android:fontFamily="sans-serif-condensed"
+                            android:onClick="coursesexpand"
+                            android:padding="4dp"
+                            android:text="click to know more"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="italic"
+                            android:transitionName="@string/simple1" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/ad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Ad Space by Google\nLoading... "
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#C2C2C2"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+
+                    <com.google.android.gms.ads.NativeExpressAdView
+                        android:id="@+id/ad1View"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="8dp"
+                        ads:adSize="320x150"
+                        ads:adUnitId="ca-app-pub-4207929380822734/6830567202">
+
+                    </com.google.android.gms.ads.NativeExpressAdView>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/paperssurface"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape3"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:transitionName="@string/simple7">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+
+                        <ImageView
+                            android:id="@+id/paperimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foreground="@drawable/shape"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/paper" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/paperimage"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="sans-serif-condensed"
+
+                            android:text="Question Bank"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffff"
+                            android:textSize="50sp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right">
+
+
+                        <TextView
+                            android:id="@+id/three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+
+                            android:fontFamily="sans-serif-condensed"
+                            android:onClick="paperexpand"
+                            android:padding="4dp"
+                            android:text="click to know more"
+                            android:textAllCaps="true"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="italic"
+                            android:transitionName="@string/simple1" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contactsurface"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="CONTACT US"
+                        android:textColor="#c2c2c2"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:fontFamily="sans-serif-condensed"
+                        android:foreground="@drawable/shape9"
+                        android:hint="Name"
+                        android:onClick="name"
+                        android:padding="8dp"
+
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:fontFamily="sans-serif-condensed"
+                        android:foreground="@drawable/shape9"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:padding="8dp"
+
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:fontFamily="sans-serif-condensed"
+                        android:foreground="@drawable/shape9"
+
+                        android:hint="Address"
+                        android:padding="8dp"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="100dp"
+                        android:layout_margin="8dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-condensed"
+                        android:foreground="@drawable/shape9"
+                        android:hint="Query/Message"
+                        android:inputType="textLongMessage"
+                        android:padding="8dp"
+                        android:textSize="15sp"
+
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/shape10"
+                        android:fontFamily="sans-serif-condensed"
+                        android:onClick="submit"
+                        android:text="send"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom|right">
+
+            <android.support.design.widget.FloatingActionButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                android:onClick="fabclick"
+                android:transitionName="@string/fab1"
+                android:id="@+id/fab"
+                ads:fabSize="normal"
+
+                ads:rippleColor="@color/colorAccenta" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:elevation="16dp"
+                android:text="+"
+                android:transitionName="@string/fab2"
+                android:textSize="30sp"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>
+
