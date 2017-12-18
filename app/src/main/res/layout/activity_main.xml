@@ -213,7 +213,7 @@ android:layout_marginRight="8dp"
                     android:id="@+id/aboutussurface"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
+                    android:layout_margin="16dp"
                     android:background="@drawable/shape3"
                     android:elevation="8dp"
 
