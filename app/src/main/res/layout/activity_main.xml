@@ -607,12 +607,13 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:elevation="16dp"
-                android:layout_gravity="center"
+                android:id="@+id/textView"
 
+                android:layout_gravity="center"
+                android:transitionName="@string/fab2"
                 android:src="@drawable/call"/>
             <TextView
-                android:id="@+id/textView"
-                android:visibility="invisible"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -620,7 +621,7 @@
                 android:text="+"
                 android:textColor="@android:color/white"
                 android:textSize="30sp"
-                android:transitionName="@string/fab2" />
+                 />
         </FrameLayout>
 
 
