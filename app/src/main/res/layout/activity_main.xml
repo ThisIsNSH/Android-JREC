@@ -11,9 +11,9 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
         <ScrollView
 
@@ -58,7 +58,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-android:layout_marginRight="8dp"
+                                android:layout_marginRight="8dp"
                                 android:text="JREC"
                                 android:textAllCaps="true"
                                 android:textColor="#04ABB6"
@@ -228,7 +228,7 @@ android:layout_marginRight="8dp"
                             android:id="@+id/aboutusimage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-android:foreground="#80000000 "
+                            android:foreground="#80000000 "
 
                             android:scaleType="centerCrop"
                             android:src="@drawable/aboutus" />
@@ -377,36 +377,36 @@ android:foreground="#80000000 "
 
                 </LinearLayout>
 
-<!--                <FrameLayout
-                    android:id="@+id/ad2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/shape8">
+                <!--                <FrameLayout
+                                    android:id="@+id/ad2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="8dp"
+                                    android:background="@drawable/shape8">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="sans-serif-condensed"
-                        android:text="Ad Space by Google\nLoading... "
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
-                        android:textColor="#C2C2C2"
-                        android:textSize="20sp"
-                        android:textStyle="normal" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:text="Ad Space by Google\nLoading... "
+                                        android:textAlignment="center"
+                                        android:textAllCaps="false"
+                                        android:textColor="#C2C2C2"
+                                        android:textSize="20sp"
+                                        android:textStyle="normal" />
 
-                    <com.google.android.gms.ads.NativeExpressAdView
-                        android:id="@+id/ad1View"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_margin="8dp"
-                        ads:adSize="320x150"
-                        ads:adUnitId="ca-app-pub-4207929380822734/6830567202">
+                                    <com.google.android.gms.ads.NativeExpressAdView
+                                        android:id="@+id/ad1View"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_margin="8dp"
+                                        ads:adSize="320x150"
+                                        ads:adUnitId="ca-app-pub-4207929380822734/6830567202">
 
-                    </com.google.android.gms.ads.NativeExpressAdView>
-                </FrameLayout>-->
+                                    </com.google.android.gms.ads.NativeExpressAdView>
+                                </FrameLayout>-->
 
                 <LinearLayout
                     android:id="@+id/paperssurface"
@@ -592,13 +592,13 @@ android:foreground="#80000000 "
 
             <android.support.design.widget.FloatingActionButton
 
+                android:id="@+id/fab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:elevation="8dp"
                 android:onClick="fabclick"
                 android:transitionName="@string/fab1"
-                android:id="@+id/fab"
                 ads:fabSize="normal"
 
                 ads:rippleColor="@color/colorAccenta" />
@@ -610,9 +610,9 @@ android:foreground="#80000000 "
                 android:layout_gravity="center"
                 android:elevation="16dp"
                 android:text="+"
-                android:transitionName="@string/fab2"
+                android:textColor="@android:color/white"
                 android:textSize="30sp"
-                android:textColor="@android:color/white" />
+                android:transitionName="@string/fab2" />
         </FrameLayout>
 
 
