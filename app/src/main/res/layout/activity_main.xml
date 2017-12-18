@@ -328,7 +328,7 @@ android:foreground="#80000000 "
                             android:id="@+id/coursesimage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:foreground="@drawable/shape"
+                            android:foreground="#80000000"
                             android:scaleType="centerCrop"
                             android:src="@drawable/courses" />
 
