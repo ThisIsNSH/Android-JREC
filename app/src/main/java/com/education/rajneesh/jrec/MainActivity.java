@@ -48,37 +48,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button send = (Button) findViewById(R.id.submit);
 
-        send.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-
-                EditText name = (EditText) findViewById(R.id.name);
-                EditText mobile = (EditText) findViewById(R.id.mobile);
-                EditText email = (EditText) findViewById(R.id.email);
-                EditText message = (EditText) findViewById(R.id.message);
-
-                String name1 = name.getText().toString();
-                String mobile1 = mobile.getText().toString();
-                String email2 = email.getText().toString();
-                String message1 = message.getText().toString();
-
-
-                Intent email1 = new Intent(Intent.ACTION_SEND);
-                email1.setData(Uri.parse("mailto:"));
-
-                email1.setType("message/rfc822");
-                email1.putExtra(Intent.EXTRA_EMAIL, new String[]{"jrec.singh@gmail.com"});
-                email1.putExtra(Intent.EXTRA_SUBJECT, "App Query");
-                email1.putExtra(Intent.EXTRA_TEXT, "Name: " + name1 + "\nAddress: " + email2 + "\nMobile: " + mobile1 + "\n\nMessage: " + message1);
-                if (email1.resolveActivity(getPackageManager()) != null) {
-                    startActivity(email1);
-                }
-
-            }
-        });
 /*
         //.addTestDevice("0F4C93A8E4B31EC8591E468FB2BDE152")
         NativeExpressAdView adView = (NativeExpressAdView) findViewById(R.id.adView);
@@ -204,43 +174,13 @@ public class MainActivity extends AppCompatActivity {
         myView30.setBackgroundResource(backgroundResource30);
 
 
-        EditText myView = (EditText) findViewById(R.id.name);
 
-        int[] attrs = new int[]{R.attr.selectableItemBackground};
-        TypedArray typedArray = this.obtainStyledAttributes(attrs);
-        int backgroundResource = typedArray.getResourceId(0, 0);
-        myView.setBackgroundResource(backgroundResource);
-
-
-        EditText myView1 = (EditText) findViewById(R.id.mobile);
-
-        int[] attrs1 = new int[]{R.attr.selectableItemBackground};
-        TypedArray typedArray1 = this.obtainStyledAttributes(attrs1);
-        int backgroundResource1 = typedArray1.getResourceId(0, 0);
-        myView1.setBackgroundResource(backgroundResource1);
-
-
-        EditText myView2 = (EditText) findViewById(R.id.email);
-
-        int[] attrs2 = new int[]{R.attr.selectableItemBackground};
-        TypedArray typedArray2 = this.obtainStyledAttributes(attrs2);
-        int backgroundResource2 = typedArray2.getResourceId(0, 0);
-        myView2.setBackgroundResource(backgroundResource2);
-
-
-        EditText myView3 = (EditText) findViewById(R.id.message);
-
-        int[] attrs3 = new int[]{R.attr.selectableItemBackground};
-        TypedArray typedArray3 = this.obtainStyledAttributes(attrs3);
-        int backgroundResource3 = typedArray3.getResourceId(0, 0);
-        myView3.setBackgroundResource(backgroundResource3);
 
         LinearLayout aboutus = (LinearLayout) findViewById(R.id.aboutussurface);
         //FrameLayout adone = (FrameLayout) findViewById(R.id.ad1);
         LinearLayout courses = (LinearLayout) findViewById(R.id.coursessurface);
       //  FrameLayout adtwo = (FrameLayout) findViewById(R.id.ad2);
         LinearLayout question = (LinearLayout) findViewById(R.id.paperssurface);
-        LinearLayout contactus = (LinearLayout) findViewById(R.id.contactsurface);
         LinearLayout main = (LinearLayout) findViewById(R.id.mainsurface);
 
 
@@ -284,12 +224,7 @@ public class MainActivity extends AppCompatActivity {
         question.startAnimation(question1);
 
 
-        Animation contactus1 = AnimationUtils.loadAnimation(this, R.anim.translate);
-        contactus1.setStartOffset(1800);
-        ObjectAnimator contactus2 = ObjectAnimator.ofFloat(contactus, "alpha", 0, 1).setDuration(1500);
-        contactus2.start();
-        contactus2.setStartDelay(1800);
-        contactus.startAnimation(contactus1);
+
 
 
         Animation main1 = AnimationUtils.loadAnimation(this, R.anim.translate);
@@ -403,19 +338,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    @Override
-    public void onResume()
-    {
-        super.onResume();
-        ImageView text = (ImageView) findViewById(R.id.textView);
-        text.setVisibility(View.VISIBLE);
-    }
 
     //SHARED ELEMENT TRANSTION fab
     public void fabclick(View view) {
 
-       /* ImageView text = (ImageView) findViewById(R.id.textView);
-        text.setVisibility(View.INVISIBLE);
+
         // Ordinary Intent for launching a new activity
         Intent intent = new Intent(this, fab.class);
 
@@ -433,19 +360,7 @@ public class MainActivity extends AppCompatActivity {
                 );
         //Start the Intent
         ActivityCompat.startActivity(this, intent, options.toBundle());
-*/
-        Intent intent = new Intent(this, fab.class);
 
-       View homeTeam =  findViewById(R.id.fab);
-       View awayTeam =  findViewById(R.id.textView);
-
-        final String awayTeamTransition = this.getString(R.string.fab2);
-        final String homeTeamTransition = this.getString(R.string.fab1);
-        final ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(
-                this,
-                Pair.create(homeTeam, homeTeamTransition),
-                Pair.create(awayTeam, awayTeamTransition));
-        ActivityCompat.startActivity(this, intent, options.toBundle());
 
     }
 

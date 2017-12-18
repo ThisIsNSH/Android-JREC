@@ -2,36 +2,29 @@
 <FrameLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_fab"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#80000000"
+    android:onClick="back"
     tools:context="com.education.rajneesh.jrec.fab">
 
 
-<FrameLayout
-    android:layout_width="match_parent"
-android:layout_marginRight="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_gravity="center_vertical"
-    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+       >
 
-
-
-
-<ScrollView
-    android:layout_width="match_parent"
-    android:background="#fff"
-    android:layout_height="wrap_content">
         <LinearLayout
             android:id="@+id/contactsurface"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-android:background="#fff"
-
+            android:background="@drawable/shape3"
             android:orientation="vertical">
 
             <TextView
@@ -42,7 +35,7 @@ android:background="#fff"
                 android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
                 android:text="CONTACT US"
-                android:textColor="#c2c2c2"
+                android:textColor="#a1a1a1"
                 android:textSize="40sp"
                 android:textStyle="bold"
 
@@ -59,7 +52,7 @@ android:background="#fff"
                 android:hint="Name"
                 android:onClick="name"
                 android:padding="8dp"
-android:textColor="#000"
+                android:textColor="#000"
                 android:textColorHint="#000"
                 android:textSize="15sp"
                 android:textStyle="italic" />
@@ -88,10 +81,10 @@ android:textColor="#000"
                 android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-condensed"
                 android:foreground="@drawable/shape9"
-                android:textColor="#000"
-                android:textColorHint="#000"
                 android:hint="Address"
                 android:padding="8dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
                 android:textSize="15sp"
                 android:textStyle="italic" />
 
@@ -108,9 +101,9 @@ android:textColor="#000"
                 android:hint="Query/Message"
                 android:inputType="textLongMessage"
                 android:padding="8dp"
-                android:textSize="15sp"
                 android:textColor="#000"
                 android:textColorHint="#000"
+                android:textSize="15sp"
                 android:textStyle="italic" />
 
             <Button
@@ -119,10 +112,12 @@ android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
-                android:background="@drawable/shape10"
+                android:backgroundTint="#000"
                 android:fontFamily="sans-serif-condensed"
                 android:onClick="submit"
                 android:text="send"
+                android:transitionName="@string/fab1"
+
                 android:textAllCaps="true"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
@@ -130,54 +125,7 @@ android:textColor="#000"
 
 
         </LinearLayout>
-</ScrollView>
+    </ScrollView>
 
-
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-android:id="@+id/fab_one"
-        android:transitionName="@string/fab12"
-        android:layout_marginTop="170dp"
-
-        android:layout_gravity="right">
-
-        <android.support.design.widget.FloatingActionButton
-
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="8dp"
-
-            android:transitionName="@string/fab1"
-            ads:fabSize="normal"
-
-            ads:rippleColor="@color/colorAccenta" />
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:elevation="16dp"
-            android:foreground="#000"
-            android:layout_gravity="center"
-            android:transitionName="@string/fab2"
-            android:src="@drawable/info"/>
-    </FrameLayout>
-
-
-</FrameLayout>
-
-    <android.support.design.widget.FloatingActionButton
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        ads:fabSize="normal"
-        ads:rippleColor="@color/colorPrimary"
-        android:layout_gravity="bottom|right"
-        android:layout_margin="8dp"
-        android:id="@+id/fab1"
-        android:visibility="invisible"
-        android:elevation="8dp"/>
 
 </FrameLayout>
