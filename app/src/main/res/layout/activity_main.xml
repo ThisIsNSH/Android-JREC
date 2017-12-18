@@ -198,15 +198,7 @@
         </HorizontalScrollView>-->
                     </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/info1"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:clickable="true"
-                        android:elevation="4dp"
-                        android:onClick="info2"
-                        android:padding="8dp"
-                        android:src="@drawable/info" />
+
                 </FrameLayout>
 
                 <LinearLayout
@@ -477,7 +469,15 @@
 
                 </LinearLayout>
 
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:textColor="#000"
+    android:layout_gravity="center"
+    android:fontFamily="sans-serif-condensed"
+    android:textAllCaps="true"
+    android:text="App made by Nishant Singh Hada"/>
 
 
             </LinearLayout>
