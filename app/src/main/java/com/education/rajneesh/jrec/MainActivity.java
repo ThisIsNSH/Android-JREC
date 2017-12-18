@@ -234,9 +234,9 @@ public class MainActivity extends AppCompatActivity {
         myView3.setBackgroundResource(backgroundResource3);
 
         LinearLayout aboutus = (LinearLayout) findViewById(R.id.aboutussurface);
-        FrameLayout adone = (FrameLayout) findViewById(R.id.ad1);
+        //FrameLayout adone = (FrameLayout) findViewById(R.id.ad1);
         LinearLayout courses = (LinearLayout) findViewById(R.id.coursessurface);
-        FrameLayout adtwo = (FrameLayout) findViewById(R.id.ad2);
+      //  FrameLayout adtwo = (FrameLayout) findViewById(R.id.ad2);
         LinearLayout question = (LinearLayout) findViewById(R.id.paperssurface);
         LinearLayout contactus = (LinearLayout) findViewById(R.id.contactsurface);
         LinearLayout main = (LinearLayout) findViewById(R.id.mainsurface);
@@ -250,13 +250,13 @@ public class MainActivity extends AppCompatActivity {
         aboutus.startAnimation(aboutus1);
 
 
-        Animation adone1 = AnimationUtils.loadAnimation(this, R.anim.translate);
+/*        Animation adone1 = AnimationUtils.loadAnimation(this, R.anim.translate);
         adone1.setStartOffset(600);
         ObjectAnimator adone2 = ObjectAnimator.ofFloat(adone, "alpha", 0, 1).setDuration(1500);
         adone2.start();
         adone2.setStartDelay(600);
         adone.startAnimation(adone1);
-
+*/
 
         Animation courses1 = AnimationUtils.loadAnimation(this, R.anim.translate);
         courses1.setStartOffset(900);
@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
         courses2.setStartDelay(900);
         courses.startAnimation(courses1);
 
-
+/*
         Animation adtwo1 = AnimationUtils.loadAnimation(this, R.anim.translate);
         adtwo1.setStartOffset(1200);
         ObjectAnimator adtwo2 = ObjectAnimator.ofFloat(adtwo, "alpha", 0, 1).setDuration(1500);
@@ -273,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
         adtwo2.setStartDelay(1200);
         adtwo.startAnimation(adtwo1);
 
-
+*/
         Animation question1 = AnimationUtils.loadAnimation(this, R.anim.translate);
         question1.setStartOffset(1500);
         ObjectAnimator question2 = ObjectAnimator.ofFloat(question, "alpha", 0, 1).setDuration(1500);

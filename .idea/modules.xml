@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JREC - Copy - Copy.iml" filepath="$PROJECT_DIR$/JREC - Copy - Copy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JREC.iml" filepath="$PROJECT_DIR$/JREC.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
