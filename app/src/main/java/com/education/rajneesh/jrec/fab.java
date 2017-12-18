@@ -37,7 +37,7 @@ public class fab extends FragmentActivity {
         setContentView(activity_fab);
 
 
-        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.fabsurface);
+        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.contactsurface);
         if (savedInstanceState == null) {
             rootLayout.setVisibility(View.INVISIBLE);
 
@@ -46,7 +46,7 @@ public class fab extends FragmentActivity {
                 viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
                     @Override
                     public void onGlobalLayout() {
-                        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.fabsurface);
+                        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.contactsurface);
                         enterReveal();
                         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
                             rootLayout.getViewTreeObserver().removeGlobalOnLayoutListener(this);
@@ -58,29 +58,7 @@ public class fab extends FragmentActivity {
             }
         }
 
-        ImageView rootLayout1 = (ImageView) findViewById(R.id.fab_pic);
-        if (savedInstanceState == null) {
-            rootLayout1.setVisibility(View.INVISIBLE);
 
-            ViewTreeObserver viewTreeObserver = rootLayout1.getViewTreeObserver();
-            if (viewTreeObserver.isAlive()) {
-                viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                    @Override
-                    public void onGlobalLayout() {
-                        ImageView rootLayout1= (ImageView) findViewById(R.id.fab_pic);
-                        enterReveal1();
-                        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
-                            rootLayout1.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-                        } else {
-                            rootLayout1.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                        }
-                    }
-                });
-            }
-
-
-
-    }
 
 
 
