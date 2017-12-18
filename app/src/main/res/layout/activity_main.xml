@@ -267,11 +267,11 @@
                             android:fontFamily="sans-serif-condensed"
                             android:onClick="aboutexpand"
                             android:padding="4dp"
-                            android:text="click to know more"
+                            android:text="click here"
                             android:textAllCaps="true"
                             android:textColor="#000000"
                             android:textSize="15sp"
-                            android:textStyle="italic" />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
