@@ -174,43 +174,13 @@ public class MainActivity extends AppCompatActivity {
         myView30.setBackgroundResource(backgroundResource30);
 
 
-        EditText myView = (EditText) findViewById(R.id.name);
 
-        int[] attrs = new int[]{R.attr.selectableItemBackground};
-        TypedArray typedArray = this.obtainStyledAttributes(attrs);
-        int backgroundResource = typedArray.getResourceId(0, 0);
-        myView.setBackgroundResource(backgroundResource);
-
-
-        EditText myView1 = (EditText) findViewById(R.id.mobile);
-
-        int[] attrs1 = new int[]{R.attr.selectableItemBackground};
-        TypedArray typedArray1 = this.obtainStyledAttributes(attrs1);
-        int backgroundResource1 = typedArray1.getResourceId(0, 0);
-        myView1.setBackgroundResource(backgroundResource1);
-
-
-        EditText myView2 = (EditText) findViewById(R.id.email);
-
-        int[] attrs2 = new int[]{R.attr.selectableItemBackground};
-        TypedArray typedArray2 = this.obtainStyledAttributes(attrs2);
-        int backgroundResource2 = typedArray2.getResourceId(0, 0);
-        myView2.setBackgroundResource(backgroundResource2);
-
-
-        EditText myView3 = (EditText) findViewById(R.id.message);
-
-        int[] attrs3 = new int[]{R.attr.selectableItemBackground};
-        TypedArray typedArray3 = this.obtainStyledAttributes(attrs3);
-        int backgroundResource3 = typedArray3.getResourceId(0, 0);
-        myView3.setBackgroundResource(backgroundResource3);
 
         LinearLayout aboutus = (LinearLayout) findViewById(R.id.aboutussurface);
         //FrameLayout adone = (FrameLayout) findViewById(R.id.ad1);
         LinearLayout courses = (LinearLayout) findViewById(R.id.coursessurface);
       //  FrameLayout adtwo = (FrameLayout) findViewById(R.id.ad2);
         LinearLayout question = (LinearLayout) findViewById(R.id.paperssurface);
-        LinearLayout contactus = (LinearLayout) findViewById(R.id.contactsurface);
         LinearLayout main = (LinearLayout) findViewById(R.id.mainsurface);
 
 
@@ -254,12 +224,7 @@ public class MainActivity extends AppCompatActivity {
         question.startAnimation(question1);
 
 
-        Animation contactus1 = AnimationUtils.loadAnimation(this, R.anim.translate);
-        contactus1.setStartOffset(1800);
-        ObjectAnimator contactus2 = ObjectAnimator.ofFloat(contactus, "alpha", 0, 1).setDuration(1500);
-        contactus2.start();
-        contactus2.setStartDelay(1800);
-        contactus.startAnimation(contactus1);
+
 
 
         Animation main1 = AnimationUtils.loadAnimation(this, R.anim.translate);
