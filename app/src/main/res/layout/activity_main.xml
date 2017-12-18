@@ -58,9 +58,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginRight="-10dp"
-
-                                android:text="JREC "
+android:layout_marginRight="8dp"
+                                android:text="JREC"
                                 android:textAllCaps="true"
                                 android:textColor="#04ABB6"
                                 android:textSize="75sp"
@@ -109,13 +108,13 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="-8dp"
-                            android:fontFamily="sans-serif-condensed"
+
                             android:text="RSCIT-TALLY-hardware "
                             android:textAllCaps="true"
                             android:textColor="#0FE2F0"
-                            android:textSize="30sp"
+                            android:textSize="20sp"
 
-                            android:textStyle="italic" />
+                            />
                         <!--
                                             <TextView
                                                 android:layout_width="wrap_content"
