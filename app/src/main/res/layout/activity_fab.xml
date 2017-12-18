@@ -13,24 +13,17 @@
 
 <FrameLayout
     android:layout_width="match_parent"
-
+android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_gravity="center_vertical"
     android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#f3f3f3"
-        android:orientation="vertical"
-        android:id="@+id/fabsurface">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:id="@+id/fab_pic"
-            android:scaleType="centerCrop"
-            android:src="@drawable/fab_pic"/>
+
+
 <ScrollView
     android:layout_width="match_parent"
+    android:background="#fff"
     android:layout_height="wrap_content">
         <LinearLayout
             android:id="@+id/contactsurface"
@@ -138,7 +131,7 @@ android:textColor="#000"
 
         </LinearLayout>
 </ScrollView>
-</LinearLayout>
+
 
     <FrameLayout
         android:layout_width="wrap_content"
