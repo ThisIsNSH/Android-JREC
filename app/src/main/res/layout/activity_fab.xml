@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
-                android:background="@drawable/shape10"
+                android:backgroundTint="@color/colorAccent"
                 android:fontFamily="sans-serif-condensed"
                 android:onClick="submit"
                 android:text="send"
