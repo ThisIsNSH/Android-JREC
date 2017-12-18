@@ -3,6 +3,7 @@ package com.education.rajneesh.jrec;
 import android.Manifest;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.TypedArray;
@@ -15,6 +16,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Explode;
+import android.util.Pair;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -405,14 +407,14 @@ public class MainActivity extends AppCompatActivity {
     public void onResume()
     {
         super.onResume();
-        TextView text = (TextView) findViewById(R.id.textView);
+        ImageView text = (ImageView) findViewById(R.id.textView);
         text.setVisibility(View.VISIBLE);
     }
 
     //SHARED ELEMENT TRANSTION fab
     public void fabclick(View view) {
 
-        TextView text = (TextView) findViewById(R.id.textView);
+       /* ImageView text = (ImageView) findViewById(R.id.textView);
         text.setVisibility(View.INVISIBLE);
         // Ordinary Intent for launching a new activity
         Intent intent = new Intent(this, fab.class);
@@ -430,6 +432,19 @@ public class MainActivity extends AppCompatActivity {
                         transitionName    // The String
                 );
         //Start the Intent
+        ActivityCompat.startActivity(this, intent, options.toBundle());
+*/
+        Intent intent = new Intent(this, fab.class);
+
+       View homeTeam =  findViewById(R.id.fab);
+       View awayTeam =  findViewById(R.id.textView);
+
+        final String awayTeamTransition = this.getString(R.string.fab2);
+        final String homeTeamTransition = this.getString(R.string.fab1);
+        final ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(
+                this,
+                Pair.create(homeTeam, homeTeamTransition),
+                Pair.create(awayTeam, awayTeamTransition));
         ActivityCompat.startActivity(this, intent, options.toBundle());
 
     }

@@ -93,23 +93,6 @@ public class fab extends FragmentActivity {
 
         }
 
-public void fabclick1(View view){
-
-  //  LinearLayout one = (LinearLayout) findViewById(R.id.fabsurface1);
-    //FrameLayout fab = (FrameLayout) findViewById(R.id.fab_two);
-   // FrameLayout fab1 = (FrameLayout) findViewById(R.id.fab_one);
-    //fab.setVisibility(View.VISIBLE);
-    //one.setVisibility(View.VISIBLE);
-
-
-    // Ordinary Intent for launching a new activity
-    Intent intent = new Intent(this, fab1.class);
-startActivity(intent);
-
-
-    FrameLayout fm = (FrameLayout) findViewById(R.id.fab_one);
-    fm.setVisibility(View.INVISIBLE);
-}
  @Override
  public void onResume(){
      super.onResume();
