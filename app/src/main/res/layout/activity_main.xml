@@ -498,30 +498,15 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:elevation="8dp"
+                android:src="@drawable/call"
+
+                ads:backgroundTint="#000"
                 android:onClick="fabclick"
                 android:transitionName="@string/fab1"
-                ads:fabSize="normal"
+                ads:fabSize="mini"
                 ads:rippleColor="#fff" />
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:elevation="16dp"
-                android:id="@+id/textView"
-android:foreground="#000"
-                android:layout_gravity="center"
-                android:transitionName="@string/fab2"
-                android:src="@drawable/info"/>
-            <TextView
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:elevation="16dp"
-                android:text="+"
-                android:textColor="@android:color/white"
-                android:textSize="30sp"
-                 />
+
         </FrameLayout>
 
 
