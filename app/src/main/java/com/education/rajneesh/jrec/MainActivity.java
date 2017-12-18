@@ -403,19 +403,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    @Override
-    public void onResume()
-    {
-        super.onResume();
-        ImageView text = (ImageView) findViewById(R.id.textView);
-        text.setVisibility(View.VISIBLE);
-    }
 
     //SHARED ELEMENT TRANSTION fab
     public void fabclick(View view) {
 
-       /* ImageView text = (ImageView) findViewById(R.id.textView);
-        text.setVisibility(View.INVISIBLE);
+
         // Ordinary Intent for launching a new activity
         Intent intent = new Intent(this, fab.class);
 
@@ -433,19 +425,7 @@ public class MainActivity extends AppCompatActivity {
                 );
         //Start the Intent
         ActivityCompat.startActivity(this, intent, options.toBundle());
-*/
-        Intent intent = new Intent(this, fab.class);
 
-       View homeTeam =  findViewById(R.id.fab);
-       View awayTeam =  findViewById(R.id.textView);
-
-        final String awayTeamTransition = this.getString(R.string.fab2);
-        final String homeTeamTransition = this.getString(R.string.fab1);
-        final ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(
-                this,
-                Pair.create(homeTeam, homeTeamTransition),
-                Pair.create(awayTeam, awayTeamTransition));
-        ActivityCompat.startActivity(this, intent, options.toBundle());
 
     }
 
