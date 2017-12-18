@@ -71,14 +71,10 @@ public class fab extends FragmentActivity {
 
         }
 
- @Override
- public void onResume(){
-     super.onResume();
-     FrameLayout fm = (FrameLayout) findViewById(R.id.fab_one);
-     fm.setVisibility(View.VISIBLE);
- }
-
-
+    public void back(View view)
+    {
+        finish();
+    }
 
     private void enterReveal() {
 /*
