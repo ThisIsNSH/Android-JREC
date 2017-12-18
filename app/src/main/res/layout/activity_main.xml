@@ -59,12 +59,12 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginRight="-10dp"
-                                android:fontFamily="sans-serif-condensed"
+
                                 android:text="JREC "
                                 android:textAllCaps="true"
                                 android:textColor="#04ABB6"
                                 android:textSize="75sp"
-                                android:textStyle="bold|italic"
+                                android:textStyle="bold"
 
                                 />
 
@@ -86,7 +86,7 @@
                                     android:textColor="#04ABB6"
                                     android:textSize="30sp"
 
-                                    android:textStyle="bold|italic" />
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
                                     android:textColor="#04ABB6"
                                     android:textSize="30sp"
 
-                                    android:textStyle="bold|italic" />
+                                    android:textStyle="bold" />
                             </LinearLayout>
                         </LinearLayout>
 
@@ -280,7 +280,7 @@
 
                 </LinearLayout>
 
-                <FrameLayout
+                <!--<FrameLayout
                     android:id="@+id/ad1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -310,7 +310,7 @@
 
                     </com.google.android.gms.ads.NativeExpressAdView>
 
-                </FrameLayout>
+                </FrameLayout>-->
 
                 <LinearLayout
                     android:id="@+id/coursessurface"
@@ -379,7 +379,7 @@
 
                 </LinearLayout>
 
-                <FrameLayout
+<!--                <FrameLayout
                     android:id="@+id/ad2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -408,7 +408,7 @@
                         ads:adUnitId="ca-app-pub-4207929380822734/6830567202">
 
                     </com.google.android.gms.ads.NativeExpressAdView>
-                </FrameLayout>
+                </FrameLayout>-->
 
                 <LinearLayout
                     android:id="@+id/paperssurface"
