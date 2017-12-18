@@ -7,16 +7,9 @@
     android:id="@+id/activity_fab"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.education.rajneesh.jrec.fab">
 
 
-<FrameLayout
-    android:layout_width="match_parent"
-android:layout_marginRight="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_gravity="center_vertical"
-    android:layout_height="wrap_content">
 
 
 
@@ -133,51 +126,4 @@ android:textColor="#000"
 </ScrollView>
 
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-android:id="@+id/fab_one"
-        android:transitionName="@string/fab12"
-        android:layout_marginTop="170dp"
-
-        android:layout_gravity="right">
-
-        <android.support.design.widget.FloatingActionButton
-
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:elevation="8dp"
-
-            android:transitionName="@string/fab1"
-            ads:fabSize="normal"
-
-            ads:rippleColor="@color/colorAccenta" />
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:elevation="16dp"
-            android:foreground="#000"
-            android:layout_gravity="center"
-            android:transitionName="@string/fab2"
-            android:src="@drawable/info"/>
-    </FrameLayout>
-
-
-</FrameLayout>
-
-    <android.support.design.widget.FloatingActionButton
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        ads:fabSize="normal"
-        ads:rippleColor="@color/colorPrimary"
-        android:layout_gravity="bottom|right"
-        android:layout_margin="8dp"
-        android:id="@+id/fab1"
-        android:visibility="invisible"
-        android:elevation="8dp"/>
-
-</FrameLayout>
+  
