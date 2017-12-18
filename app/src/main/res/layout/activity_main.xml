@@ -228,7 +228,7 @@
                             android:id="@+id/aboutusimage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:foreground="#80000000 "
+                            android:foreground="#80000000"
 
                             android:scaleType="centerCrop"
                             android:src="@drawable/aboutus" />
@@ -603,8 +603,16 @@
 
                 ads:rippleColor="@color/colorAccenta" />
 
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="16dp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/call"/>
             <TextView
                 android:id="@+id/textView"
+                android:visibility="invisible"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
