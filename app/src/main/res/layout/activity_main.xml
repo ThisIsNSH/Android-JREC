@@ -477,106 +477,7 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/contactsurface"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
 
-
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
-                        android:fontFamily="sans-serif-condensed"
-                        android:text="CONTACT US"
-                        android:textColor="#c2c2c2"
-                        android:textSize="40sp"
-                        android:textStyle="bold"
-
-                        />
-
-                    <EditText
-                        android:id="@+id/name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:fontFamily="sans-serif-condensed"
-                        android:foreground="@drawable/shape9"
-                        android:hint="Name"
-                        android:onClick="name"
-                        android:padding="8dp"
-
-                        android:textSize="15sp"
-                        android:textStyle="italic" />
-
-                    <EditText
-                        android:id="@+id/mobile"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:fontFamily="sans-serif-condensed"
-                        android:foreground="@drawable/shape9"
-                        android:hint="Mobile Number"
-                        android:inputType="number"
-                        android:padding="8dp"
-
-                        android:textSize="15sp"
-                        android:textStyle="italic" />
-
-                    <EditText
-                        android:id="@+id/email"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:fontFamily="sans-serif-condensed"
-                        android:foreground="@drawable/shape9"
-
-                        android:hint="Address"
-                        android:padding="8dp"
-                        android:textSize="15sp"
-                        android:textStyle="italic" />
-
-                    <EditText
-                        android:id="@+id/message"
-                        android:layout_width="match_parent"
-
-                        android:layout_height="100dp"
-                        android:layout_margin="8dp"
-                        android:background="?android:attr/selectableItemBackground"
-                        android:clickable="true"
-                        android:fontFamily="sans-serif-condensed"
-                        android:foreground="@drawable/shape9"
-                        android:hint="Query/Message"
-                        android:inputType="textLongMessage"
-                        android:padding="8dp"
-                        android:textSize="15sp"
-
-                        android:textStyle="italic" />
-
-                    <Button
-                        android:id="@+id/submit"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/shape10"
-                        android:fontFamily="sans-serif-condensed"
-                        android:onClick="submit"
-                        android:text="send"
-                        android:textAllCaps="true"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-
-                </LinearLayout>
 
 
             </LinearLayout>
@@ -600,18 +501,17 @@
                 android:onClick="fabclick"
                 android:transitionName="@string/fab1"
                 ads:fabSize="normal"
-
-                ads:rippleColor="@color/colorAccenta" />
+                ads:rippleColor="#fff" />
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:elevation="16dp"
                 android:id="@+id/textView"
-
+android:foreground="#000"
                 android:layout_gravity="center"
                 android:transitionName="@string/fab2"
-                android:src="@drawable/call"/>
+                android:src="@drawable/info"/>
             <TextView
                 android:visibility="gone"
                 android:layout_width="match_parent"
