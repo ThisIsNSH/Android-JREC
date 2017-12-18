@@ -42,7 +42,7 @@ android:background="#fff"
                 android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
                 android:text="CONTACT US"
-                android:textColor="#c2c2c2"
+                android:textColor="#a1a1a1"
                 android:textSize="40sp"
                 android:textStyle="bold"
 
