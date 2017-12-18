@@ -48,37 +48,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button send = (Button) findViewById(R.id.submit);
 
-        send.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-
-                EditText name = (EditText) findViewById(R.id.name);
-                EditText mobile = (EditText) findViewById(R.id.mobile);
-                EditText email = (EditText) findViewById(R.id.email);
-                EditText message = (EditText) findViewById(R.id.message);
-
-                String name1 = name.getText().toString();
-                String mobile1 = mobile.getText().toString();
-                String email2 = email.getText().toString();
-                String message1 = message.getText().toString();
-
-
-                Intent email1 = new Intent(Intent.ACTION_SEND);
-                email1.setData(Uri.parse("mailto:"));
-
-                email1.setType("message/rfc822");
-                email1.putExtra(Intent.EXTRA_EMAIL, new String[]{"jrec.singh@gmail.com"});
-                email1.putExtra(Intent.EXTRA_SUBJECT, "App Query");
-                email1.putExtra(Intent.EXTRA_TEXT, "Name: " + name1 + "\nAddress: " + email2 + "\nMobile: " + mobile1 + "\n\nMessage: " + message1);
-                if (email1.resolveActivity(getPackageManager()) != null) {
-                    startActivity(email1);
-                }
-
-            }
-        });
 /*
         //.addTestDevice("0F4C93A8E4B31EC8591E468FB2BDE152")
         NativeExpressAdView adView = (NativeExpressAdView) findViewById(R.id.adView);

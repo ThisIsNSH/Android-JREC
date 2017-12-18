@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -20,6 +21,8 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -36,6 +39,37 @@ public class fab extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(activity_fab);
 
+        Button send = (Button) findViewById(R.id.submit);
+
+        send.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                EditText name = (EditText) findViewById(R.id.name);
+                EditText mobile = (EditText) findViewById(R.id.mobile);
+                EditText email = (EditText) findViewById(R.id.email);
+                EditText message = (EditText) findViewById(R.id.message);
+
+                String name1 = name.getText().toString();
+                String mobile1 = mobile.getText().toString();
+                String email2 = email.getText().toString();
+                String message1 = message.getText().toString();
+
+
+                Intent email1 = new Intent(Intent.ACTION_SEND);
+                email1.setData(Uri.parse("mailto:"));
+
+                email1.setType("message/rfc822");
+                email1.putExtra(Intent.EXTRA_EMAIL, new String[]{"jrec.singh@gmail.com"});
+                email1.putExtra(Intent.EXTRA_SUBJECT, "App Query");
+                email1.putExtra(Intent.EXTRA_TEXT, "Name: " + name1 + "\nAddress: " + email2 + "\nMobile: " + mobile1 + "\n\nMessage: " + message1);
+                if (email1.resolveActivity(getPackageManager()) != null) {
+                    startActivity(email1);
+                }
+
+            }
+        });
 
         LinearLayout rootLayout = (LinearLayout) findViewById(R.id.contactsurface);
         if (savedInstanceState == null) {
