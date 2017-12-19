@@ -12,7 +12,7 @@
         android:id="@+id/aboutussurface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F3F3F3"
+        android:background="@drawable/shape3"
         android:elevation="4dp"
         android:layout_margin="8dp"
         android:orientation="vertical"
@@ -28,7 +28,7 @@
                 android:id="@+id/aboutusimage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:foreground="@drawable/shape"
+                android:foreground="#80000000"
 
                 android:scaleType="centerCrop"
                 android:src="@drawable/paper" />
@@ -55,7 +55,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="#F3F3F3"
+            android:background="@drawable/shape3"
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -67,17 +67,17 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
                 android:id="@+id/compf"
                 android:onClick="click1"
                 android:padding="4dp"
                 android:text="comp. fundamental"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 
                 android:id="@+id/hard"
@@ -93,10 +93,10 @@
                 android:padding="4dp"
                 android:text="hardware basics"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -104,17 +104,17 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 android:id="@+id/excel"
                 android:onClick="galleryclick"
                 android:padding="4dp"
                 android:text="ms excel"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
 
             <TextView
@@ -123,24 +123,24 @@ android:id="@+id/excel"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 android:id="@+id/word"
                 android:onClick="galleryclick"
                 android:padding="4dp"
                 android:text="ms word"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 android:id="@+id/powerpoint"
 
@@ -148,17 +148,17 @@ android:id="@+id/powerpoint"
                 android:padding="4dp"
                 android:text="ms powerpoint"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 
 android:id="@+id/mix"
@@ -166,17 +166,17 @@ android:id="@+id/mix"
                 android:padding="4dp"
                 android:text="mix question"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 
 android:id="@+id/excelhindi"
@@ -184,17 +184,17 @@ android:id="@+id/excelhindi"
                 android:padding="4dp"
                 android:text="ms excel (hindi)"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 
 
@@ -203,17 +203,17 @@ android:id="@+id/excelhindi"
                 android:padding="4dp"
                 android:text="ms word (hindi)"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 
 android:id="@+id/powerpointhindi"
@@ -221,17 +221,17 @@ android:id="@+id/powerpointhindi"
                 android:padding="4dp"
                 android:text="ms powerpoint (hindi)"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 
 android:id="@+id/computerhindi"
@@ -239,17 +239,17 @@ android:id="@+id/computerhindi"
                 android:padding="4dp"
                 android:text="computer (hindi)"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 
 android:id="@+id/internethindi"
@@ -257,10 +257,10 @@ android:id="@+id/internethindi"
                 android:padding="4dp"
                 android:text="internet (hindi)"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -268,7 +268,7 @@ android:id="@+id/internethindi"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="8dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 
 android:id="@+id/dbmshindi"
@@ -276,10 +276,10 @@ android:id="@+id/dbmshindi"
                 android:padding="4dp"
                 android:text="dbms (hindi)"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
         </LinearLayout>
 </ScrollView>

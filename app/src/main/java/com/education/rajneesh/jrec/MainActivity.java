@@ -304,8 +304,7 @@ public class MainActivity extends AppCompatActivity {
                 );
         //Start the Intent
         ActivityCompat.startActivity(this, intent, options.toBundle());
-        Toast.makeText(MainActivity.this, "Use back button to go back!!",
-                Toast.LENGTH_LONG).show();
+
 
     }
 
@@ -330,8 +329,7 @@ public class MainActivity extends AppCompatActivity {
                 );
         //Start the Intent
         ActivityCompat.startActivity(this, intent, options.toBundle());
-        Toast.makeText(MainActivity.this, "Use back button to go back!!",
-                Toast.LENGTH_LONG).show();
+
 
     }
 
