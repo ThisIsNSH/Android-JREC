@@ -75,7 +75,7 @@ public class coursesexpand extends AppCompatActivity {
             public void run() {
                 pwd1.setVisibility(View.VISIBLE);
             }
-        }, 950);
+        }, 1100);
 
         anim.play(a).with(a1);
         anim.play(b).with(b1);
@@ -87,6 +87,33 @@ public class coursesexpand extends AppCompatActivity {
 
 
 
+
+    }
+
+
+
+    @Override
+    public void onBackPressed() {
+        // Write your code here
+
+        final TextView intro = (TextView) findViewById(R.id.rscit);
+        final TextView contact1 = (TextView) findViewById(R.id.tally);
+        final TextView gallery1 = (TextView) findViewById(R.id.hard);
+        final TextView tally1 = (TextView) findViewById(R.id.pmkvy);
+        final TextView pwd1 = (TextView) findViewById(R.id.pwd);
+
+        ValueAnimator e1 = ObjectAnimator.ofFloat(pwd1, "alpha", 1, 0).setDuration(200);
+        ValueAnimator d1 = ObjectAnimator.ofFloat(tally1, "alpha", 1, 0).setDuration(200);
+        ValueAnimator c1 = ObjectAnimator.ofFloat(gallery1, "alpha", 1, 0).setDuration(200);
+        ValueAnimator a1 = ObjectAnimator.ofFloat(intro, "alpha", 1, 0).setDuration(200);
+        ValueAnimator b1 = ObjectAnimator.ofFloat(contact1, "alpha", 1, 0).setDuration(200);
+
+        e1.start();
+        d1.start();
+        c1.start();
+        b1.start();
+        a1.start();
+        super.onBackPressed();
 
     }
 
