@@ -71,7 +71,7 @@ public class fab extends FragmentActivity {
 
             }
         });
-        EditText myView = (EditText) findViewById(R.id.name);
+        final EditText myView = (EditText) findViewById(R.id.name);
 
         int[] attrs = new int[]{R.attr.selectableItemBackground};
         TypedArray typedArray = this.obtainStyledAttributes(attrs);
@@ -79,7 +79,7 @@ public class fab extends FragmentActivity {
         myView.setBackgroundResource(backgroundResource);
 
 
-        EditText myView1 = (EditText) findViewById(R.id.mobile);
+        final EditText myView1 = (EditText) findViewById(R.id.mobile);
 
         int[] attrs1 = new int[]{R.attr.selectableItemBackground};
         TypedArray typedArray1 = this.obtainStyledAttributes(attrs1);
@@ -87,7 +87,7 @@ public class fab extends FragmentActivity {
         myView1.setBackgroundResource(backgroundResource1);
 
 
-        EditText myView2 = (EditText) findViewById(R.id.email);
+        final EditText myView2 = (EditText) findViewById(R.id.email);
 
         int[] attrs2 = new int[]{R.attr.selectableItemBackground};
         TypedArray typedArray2 = this.obtainStyledAttributes(attrs2);
@@ -95,12 +95,70 @@ public class fab extends FragmentActivity {
         myView2.setBackgroundResource(backgroundResource2);
 
 
-        EditText myView3 = (EditText) findViewById(R.id.message);
+        final EditText myView3 = (EditText) findViewById(R.id.message);
 
         int[] attrs3 = new int[]{R.attr.selectableItemBackground};
         TypedArray typedArray3 = this.obtainStyledAttributes(attrs3);
         int backgroundResource3 = typedArray3.getResourceId(0, 0);
         myView3.setBackgroundResource(backgroundResource3);
+
+
+
+        myView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+
+            public void onClick(View v)
+            {
+                if (v.getId() == myView.getId())
+                {
+                    myView.setCursorVisible(true);
+                }
+
+            }
+        });
+
+        myView1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+
+            public void onClick(View v)
+            {
+                if (v.getId() == myView1.getId())
+                {
+                    myView1.setCursorVisible(true);
+                }
+
+            }
+        });
+        myView2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+
+            public void onClick(View v)
+            {
+                if (v.getId() == myView2.getId())
+                {
+                    myView2.setCursorVisible(true);
+                }
+
+            }
+        });
+        myView3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+
+            public void onClick(View v)
+            {
+                if (v.getId() == myView3.getId())
+                {
+                    myView3.setCursorVisible(true);
+                }
+
+            }
+        });
+
+
 
         LinearLayout rootLayout = (LinearLayout) findViewById(R.id.contactsurface);
         if (savedInstanceState == null) {
