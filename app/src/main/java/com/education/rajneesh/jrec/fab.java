@@ -211,10 +211,17 @@ public class fab extends FragmentActivity {
         final TextView text = (TextView) findViewById(R.id.ch);
         final EditText myView2 = (EditText) findViewById(R.id.email);
         final EditText myView3 = (EditText) findViewById(R.id.message);
+Button button = (Button) findViewById(R.id.submit);
+        ValueAnimator c1 = ObjectAnimator.ofFloat(myView, "alpha",1,0 ).setDuration(200);
+        ValueAnimator a1 = ObjectAnimator.ofFloat( myView1, "alpha" ,1,0 ).setDuration(200);
+        ValueAnimator b1 = ObjectAnimator.ofFloat(myView2, "alpha", 1,0).setDuration(200);
+        ValueAnimator d1 = ObjectAnimator.ofFloat( text, "alpha" ,1,0 ).setDuration(200);
+        ValueAnimator e1 = ObjectAnimator.ofFloat(myView3, "alpha", 1,0).setDuration(200);
+        ValueAnimator f1 = ObjectAnimator.ofFloat( button, "alpha" ,1,0 ).setDuration(200);
 
-        ValueAnimator c1 = ObjectAnimator.ofFloat(gallery1, "alpha",1,0 ).setDuration(200);
-        ValueAnimator a1 = ObjectAnimator.ofFloat( intro, "alpha" ,1,0 ).setDuration(200);
-        ValueAnimator b1 = ObjectAnimator.ofFloat(contact1, "alpha", 1,0).setDuration(200);
+        f1.start();
+        d1.start();
+        e1.start();
         c1.start();
         b1.start();
         a1.start();
