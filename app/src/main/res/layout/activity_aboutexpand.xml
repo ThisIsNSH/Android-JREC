@@ -8,126 +8,125 @@
     tools:context="com.education.rajneesh.jrec.MainActivity">
 
 
-            <LinearLayout
-                android:id="@+id/aboutussurface"
+    <LinearLayout
+        android:id="@+id/aboutussurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape3"
+        android:elevation="4dp"
+
+        android:orientation="vertical"
+        android:transitionName="@string/simple">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:id="@+id/aboutusimage"
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="#80000000"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/aboutus" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:background="#F3F3F3"
-                android:elevation="4dp"
-android:layout_centerVertical="true"
+                android:layout_alignBottom="@+id/aboutusimage"
+                android:layout_marginLeft="8dp"
+                android:background="#00000000"
+                android:fontFamily="sans-serif-condensed"
+                android:text="About Us"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="50sp"
+                android:textStyle="bold" />
 
-                android:orientation="vertical"
-                android:transitionName="@string/simple">
+        </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:id="@+id/aboutusimage"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:foreground="#80000000"
-
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/aboutus" />
-
-                    <TextView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/aboutusimage"
-                        android:layout_marginLeft="8dp"
-                        android:fontFamily="sans-serif-condensed"
-android:background="#00000000"
-                        android:text="About Us"
-                        android:textAllCaps="true"
-                        android:textColor="#ffffff"
-                        android:textSize="50sp"
-                        android:textStyle="bold" />
-
-                </RelativeLayout>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:background="#F3F3F3"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/shape3"
+                android:orientation="vertical">
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="28dp"
-                        android:layout_marginTop="8dp"
-                        android:background="#F3F3F3"
+                <TextView
+                    android:id="@+id/history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
 
 
+                    android:background="#fff"
+                    android:fontFamily="sans-serif-condensed"
 
-                        android:fontFamily="sans-serif-condensed"
-android:id="@+id/history"
+                    android:onClick="historyclick"
+                    android:padding="4dp"
+                    android:text="introduction"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
 
-                        android:transitionName="@string/simple2"
-                        android:onClick="historyclick"
-                        android:padding="4dp"
-                        android:text="introduction"
-                        android:textAllCaps="true"
-                        android:textColor="#000"
-                        android:textSize="20sp"
+                    android:transitionName="@string/simple2" />
 
-                        android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#fff"
+                    android:fontFamily="sans-serif-condensed"
+                    android:onClick="contactclick"
+                    android:padding="4dp"
+                    android:text="contact and location"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="28dp"
-                        android:layout_marginTop="8dp"
-                        android:background="#F3F3F3"
-                        android:fontFamily="sans-serif-condensed"
-android:transitionName="@string/simple3"
-                        android:id="@+id/contacts"
-                        android:onClick="contactclick"
-                        android:padding="4dp"
-                        android:text="contact and location"
-                        android:textAllCaps="true"
-                        android:textColor="#000"
-                        android:textSize="20sp"
+                    android:transitionName="@string/simple3" />
 
-                        android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#fff"
+                    android:fontFamily="sans-serif-condensed"
+                    android:onClick="galleryclick"
+                    android:padding="4dp"
+                    android:text="gallery"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="28dp"
-                        android:layout_marginTop="8dp"
-                        android:background="#F3F3F3"
-                        android:fontFamily="sans-serif-condensed"
-android:transitionName="@string/simple4"
-                        android:id="@+id/gallery"
-                        android:onClick="galleryclick"
-                        android:padding="4dp"
-                        android:text="gallery"
-                        android:textAllCaps="true"
-                        android:textColor="#000"
-                        android:textSize="20sp"
-
-                        android:textStyle="bold" />
-
+                    android:transitionName="@string/simple4" />
 
 
-                </LinearLayout>
-
-</ScrollView>
             </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
 
 </RelativeLayout>
 

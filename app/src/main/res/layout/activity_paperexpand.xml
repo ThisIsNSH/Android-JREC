@@ -12,7 +12,7 @@
         android:id="@+id/aboutussurface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F3F3F3"
+        android:background="@drawable/shape3"
         android:elevation="4dp"
         android:layout_margin="8dp"
         android:orientation="vertical"
