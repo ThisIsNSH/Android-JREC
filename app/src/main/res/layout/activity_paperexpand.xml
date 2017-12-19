@@ -74,10 +74,10 @@
                 android:padding="4dp"
                 android:text="comp. fundamental"
                 android:textAllCaps="true"
-                android:textColor="#04ABB6"
+                android:textColor="#000"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -114,7 +114,7 @@ android:id="@+id/excel"
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
 
             <TextView
@@ -133,7 +133,7 @@ android:id="@+id/word"
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -151,7 +151,7 @@ android:id="@+id/powerpoint"
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -169,7 +169,7 @@ android:id="@+id/mix"
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -187,7 +187,7 @@ android:id="@+id/excelhindi"
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -206,7 +206,7 @@ android:id="@+id/excelhindi"
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -224,7 +224,7 @@ android:id="@+id/powerpointhindi"
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -242,7 +242,7 @@ android:id="@+id/computerhindi"
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -260,7 +260,7 @@ android:id="@+id/internethindi"
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -279,7 +279,7 @@ android:id="@+id/dbmshindi"
                 android:textColor="#04ABB6"
                 android:textSize="20sp"
 
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
         </LinearLayout>
 </ScrollView>
