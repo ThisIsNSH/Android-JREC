@@ -161,7 +161,7 @@ public class fab extends FragmentActivity {
       //  int cx = rootLayout.getWidth() / 2;
        // int cy = rootLayout.getHeight() / 2;
 
-        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.fabsurface);
+        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.contactsurface);
 
         int cx = rootLayout.getWidth() / 2;
         int cy = rootLayout.getHeight() / 2;

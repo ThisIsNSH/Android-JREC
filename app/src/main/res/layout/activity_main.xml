@@ -485,6 +485,7 @@
 
         </ScrollView>
 
+    </FrameLayout>
 
 
             <android.support.design.widget.FloatingActionButton
@@ -501,7 +502,6 @@
                 android:transitionName="@string/fab1"
                 ads:fabSize="mini"
                 ads:rippleColor="#fff" />
-
 
 </RelativeLayout>
 
