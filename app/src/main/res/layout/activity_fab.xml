@@ -24,7 +24,6 @@
             android:id="@+id/contactsurface"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:transitionName="@string/fab1"
 
             android:background="@drawable/shape3"
             android:orientation="vertical">
@@ -38,6 +37,7 @@
                 android:fontFamily="sans-serif-condensed"
                 android:text="CONTACT US"
                 android:textColor="#a1a1a1"
+
                 android:textSize="40sp"
                 android:textStyle="bold"
 
@@ -47,11 +47,14 @@
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:cursorVisible="false"
+
                 android:layout_margin="8dp"
                 android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-condensed"
                 android:foreground="@drawable/shape9"
                 android:hint="Name"
+
                 android:padding="8dp"
                 android:textColor="#000"
                 android:textColorHint="#000"
@@ -63,6 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:cursorVisible="false"
                 android:background="?android:attr/selectableItemBackground"
                 android:fontFamily="sans-serif-condensed"
                 android:foreground="@drawable/shape9"
@@ -83,6 +87,7 @@
                 android:fontFamily="sans-serif-condensed"
                 android:foreground="@drawable/shape9"
                 android:hint="Address"
+                android:cursorVisible="false"
                 android:padding="8dp"
                 android:textColor="#000"
                 android:textColorHint="#000"
@@ -92,7 +97,7 @@
             <EditText
                 android:id="@+id/message"
                 android:layout_width="match_parent"
-
+                android:cursorVisible="false"
                 android:layout_height="100dp"
                 android:layout_margin="8dp"
                 android:background="?android:attr/selectableItemBackground"
@@ -116,6 +121,7 @@
                 android:backgroundTint="#000"
                 android:fontFamily="sans-serif-condensed"
                 android:text="send"
+                android:transitionName="@string/fab1"
 
                 android:textAllCaps="true"
                 android:textColor="#ffffff"
