@@ -162,7 +162,7 @@ public class fab extends FragmentActivity {
             }
         });
 
-
+/*
 
         LinearLayout rootLayout = (LinearLayout) findViewById(R.id.contactsurface);
         if (savedInstanceState == null) {
@@ -188,7 +188,7 @@ public class fab extends FragmentActivity {
 
 
 
-
+*/
        // LinearLayout one = (LinearLayout) findViewById(R.id.fabsurface1);
       // FrameLayout fab = (FrameLayout) findViewById(R.id.fab_two);
        // fab.setVisibility(View.INVISIBLE);
@@ -200,7 +200,8 @@ public class fab extends FragmentActivity {
 
     public void back(View view)
     {
-        finish();
+
+
     }
 
     private void enterReveal() {

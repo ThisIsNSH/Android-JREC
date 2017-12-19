@@ -24,6 +24,8 @@
             android:id="@+id/contactsurface"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="405dp"
+            android:transitionName="@string/fab1"
 
             android:background="@drawable/shape3"
             android:orientation="vertical">
@@ -46,7 +48,7 @@
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
 
 
                 android:layout_margin="8dp"
@@ -118,7 +120,6 @@
                 android:backgroundTint="#000"
                 android:fontFamily="sans-serif-condensed"
                 android:text="send"
-                android:transitionName="@string/fab1"
 
                 android:textAllCaps="true"
                 android:textColor="#ffffff"
