@@ -1,9 +1,17 @@
 package com.education.rajneesh.jrec;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+
+import static com.education.rajneesh.jrec.R.id.contacts;
+import static com.education.rajneesh.jrec.R.id.gallery;
+import static com.education.rajneesh.jrec.R.id.history;
 
 public class coursesexpand extends AppCompatActivity {
 
@@ -11,6 +19,49 @@ public class coursesexpand extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coursesexpand);
+
+        final TextView intro = (TextView) findViewById(history);
+        final TextView contact1 = (TextView) findViewById(contacts);
+        final TextView gallery1 = (TextView) findViewById(gallery);
+        int test1[] = new int[2];
+        intro.getLocationInWindow(test1);
+
+
+        ValueAnimator a = ObjectAnimator.ofFloat(intro, "x", -10, 60).setDuration(1000);
+        ValueAnimator b = ObjectAnimator.ofFloat(contact1, "x", -10, 60).setDuration(1000);
+        ValueAnimator c = ObjectAnimator.ofFloat(gallery1, "x", -10, 60).setDuration(1000);
+        b.setStartDelay(300);
+        c.setStartDelay(500);
+        ValueAnimator c1 = ObjectAnimator.ofFloat(gallery1, "alpha", 0, 1).setDuration(1500);
+        ValueAnimator a1 = ObjectAnimator.ofFloat(intro, "alpha", 0, 1).setDuration(1500);
+        ValueAnimator b1 = ObjectAnimator.ofFloat(contact1, "alpha", 0, 1).setDuration(1500);
+
+        final AnimatorSet anim = new AnimatorSet();
+
+        intro.postDelayed(new Runnable() {
+            public void run() {
+                intro.setVisibility(View.VISIBLE);
+            }
+        }, 0);
+
+        contact1.postDelayed(new Runnable() {
+            public void run() {
+                contact1.setVisibility(View.VISIBLE);
+            }
+        }, 350);
+        gallery1.postDelayed(new Runnable() {
+            public void run() {
+                gallery1.setVisibility(View.VISIBLE);
+            }
+        }, 550);
+        
+        anim.play(a).with(a1);
+        anim.play(b).with(b1);
+        anim.play(c).with(c1);
+        anim.start();
+
+
+
 
     }
 

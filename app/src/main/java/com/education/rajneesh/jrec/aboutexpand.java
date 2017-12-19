@@ -28,22 +28,21 @@ public class aboutexpand extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aboutexpand);
-         final TextView intro = (TextView) findViewById(history);
-         final TextView contact1 = (TextView) findViewById(contacts);
+        final TextView intro = (TextView) findViewById(history);
+        final TextView contact1 = (TextView) findViewById(contacts);
         final TextView gallery1 = (TextView) findViewById(gallery);
         int test1[] = new int[2];
         intro.getLocationInWindow(test1);
 
 
-
-        ValueAnimator a = ObjectAnimator.ofFloat( intro, "x",-10,  60 ).setDuration(1000);
-        ValueAnimator b = ObjectAnimator.ofFloat(contact1, "x",-10,  60).setDuration(1000);
-        ValueAnimator c = ObjectAnimator.ofFloat(gallery1, "x",-10,  60).setDuration(1000);
+        ValueAnimator a = ObjectAnimator.ofFloat(intro, "x", -10, 60).setDuration(1000);
+        ValueAnimator b = ObjectAnimator.ofFloat(contact1, "x", -10, 60).setDuration(1000);
+        ValueAnimator c = ObjectAnimator.ofFloat(gallery1, "x", -10, 60).setDuration(1000);
         b.setStartDelay(300);
         c.setStartDelay(500);
-        ValueAnimator c1 = ObjectAnimator.ofFloat(gallery1, "alpha",0,1 ).setDuration(1500);
-        ValueAnimator a1 = ObjectAnimator.ofFloat( intro, "alpha" ,0,1 ).setDuration(1500);
-        ValueAnimator b1 = ObjectAnimator.ofFloat(contact1, "alpha", 0,1).setDuration(1500);
+        ValueAnimator c1 = ObjectAnimator.ofFloat(gallery1, "alpha", 0, 1).setDuration(1500);
+        ValueAnimator a1 = ObjectAnimator.ofFloat(intro, "alpha", 0, 1).setDuration(1500);
+        ValueAnimator b1 = ObjectAnimator.ofFloat(contact1, "alpha", 0, 1).setDuration(1500);
 
         final AnimatorSet anim = new AnimatorSet();
 
@@ -68,8 +67,8 @@ public class aboutexpand extends AppCompatActivity {
         anim.play(a).with(a1);
         anim.play(b).with(b1);
         anim.play(c).with(c1);
-  //anim.playTogether(a,a1,c1,b1,c,b);
-       // anim.setStartDelay(-300);
+        //anim.playTogether(a,a1,c1,b1,c,b);
+        // anim.setStartDelay(-300);
         anim.start();
 
         /*
@@ -83,8 +82,7 @@ public class aboutexpand extends AppCompatActivity {
             }});*/
 
 
-
-}
+    }
 
 
     @Override
@@ -94,9 +92,9 @@ public class aboutexpand extends AppCompatActivity {
         final TextView intro = (TextView) findViewById(history);
         final TextView contact1 = (TextView) findViewById(contacts);
         final TextView gallery1 = (TextView) findViewById(gallery);
-        ValueAnimator c1 = ObjectAnimator.ofFloat(gallery1, "alpha",1,0 ).setDuration(200);
-        ValueAnimator a1 = ObjectAnimator.ofFloat( intro, "alpha" ,1,0 ).setDuration(200);
-        ValueAnimator b1 = ObjectAnimator.ofFloat(contact1, "alpha", 1,0).setDuration(200);
+        ValueAnimator c1 = ObjectAnimator.ofFloat(gallery1, "alpha", 1, 0).setDuration(200);
+        ValueAnimator a1 = ObjectAnimator.ofFloat(intro, "alpha", 1, 0).setDuration(200);
+        ValueAnimator b1 = ObjectAnimator.ofFloat(contact1, "alpha", 1, 0).setDuration(200);
         c1.start();
         b1.start();
         a1.start();
@@ -109,10 +107,12 @@ public class aboutexpand extends AppCompatActivity {
         Intent intent = new Intent(aboutexpand.this, aboutus.class);
         startActivity(intent);
     }
+
     public void contactclick(View view) {
         Intent intent = new Intent(aboutexpand.this, contact.class);
         startActivity(intent);
     }
+
     public void galleryclick(View view) {
         Intent intent = new Intent(aboutexpand.this, gallery.class);
         startActivity(intent);
