@@ -14,6 +14,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.transition.Explode;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -31,6 +32,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import static android.R.attr.animation;
+import static android.R.attr.text;
 import static com.education.rajneesh.jrec.R.layout.activity_fab;
 
 public class fab extends FragmentActivity {
@@ -102,6 +104,11 @@ public class fab extends FragmentActivity {
         int backgroundResource3 = typedArray3.getResourceId(0, 0);
         myView3.setBackgroundResource(backgroundResource3);
 
+        myView.setInputType(InputType.TYPE_NULL);
+        myView1.setInputType(InputType.TYPE_NULL);
+        myView2.setInputType(InputType.TYPE_NULL);
+        myView3.setInputType(InputType.TYPE_NULL);
+
 
 
         myView.setOnClickListener(new View.OnClickListener() {
@@ -112,7 +119,7 @@ public class fab extends FragmentActivity {
             {
                 if (v.getId() == myView.getId())
                 {
-                    myView.setCursorVisible(true);
+                    myView.setInputType(InputType.TYPE_CLASS_TEXT);
                 }
 
             }
@@ -126,8 +133,7 @@ public class fab extends FragmentActivity {
             {
                 if (v.getId() == myView1.getId())
                 {
-                    myView1.setCursorVisible(true);
-                }
+                    myView1.setInputType(InputType.TYPE_CLASS_NUMBER);                }
 
             }
         });
@@ -139,8 +145,7 @@ public class fab extends FragmentActivity {
             {
                 if (v.getId() == myView2.getId())
                 {
-                    myView2.setCursorVisible(true);
-                }
+                    myView2.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);                }
 
             }
         });
@@ -152,8 +157,7 @@ public class fab extends FragmentActivity {
             {
                 if (v.getId() == myView3.getId())
                 {
-                    myView3.setCursorVisible(true);
-                }
+                    myView3.setInputType(InputType.TYPE_TEXT_FLAG_MULTI_LINE);                }
 
             }
         });
