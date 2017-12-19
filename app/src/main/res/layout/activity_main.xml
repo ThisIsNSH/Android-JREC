@@ -485,11 +485,8 @@
 
         </ScrollView>
 
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+    </FrameLayout>
 
-            android:layout_gravity="bottom|right">
 
             <android.support.design.widget.FloatingActionButton
 
@@ -498,16 +495,13 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:elevation="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
                 ads:backgroundTint="#000"
                 android:onClick="fabclick"
                 android:transitionName="@string/fab1"
                 ads:fabSize="mini"
                 ads:rippleColor="#fff" />
 
-
-        </FrameLayout>
-
-
-    </FrameLayout>
 </RelativeLayout>
 
