@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static com.education.rajneesh.jrec.R.id.contacts;
 import static com.education.rajneesh.jrec.R.id.gallery;
@@ -75,7 +76,7 @@ public class coursesexpand extends AppCompatActivity {
             public void run() {
                 pwd1.setVisibility(View.VISIBLE);
             }
-        }, 1100);
+        }, 950);
 
         anim.play(a).with(a1);
         anim.play(b).with(b1);
@@ -138,6 +139,10 @@ public class coursesexpand extends AppCompatActivity {
     public void pmkvyclick(View view) {
         Intent intent = new Intent(coursesexpand.this, pmkvy.class);
         startActivity(intent);
+    }
+    public void back(View view){
+        Toast.makeText(this, "Use back button to go back!!",
+                Toast.LENGTH_LONG).show();
     }
 
 

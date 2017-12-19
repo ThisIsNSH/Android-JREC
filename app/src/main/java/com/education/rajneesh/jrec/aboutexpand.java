@@ -117,5 +117,9 @@ public class aboutexpand extends AppCompatActivity {
         Intent intent = new Intent(aboutexpand.this, gallery.class);
         startActivity(intent);
     }
+    public void back(View view){
+        Toast.makeText(this, "Use back button to go back!!",
+                Toast.LENGTH_LONG).show();
+    }
 
 }
