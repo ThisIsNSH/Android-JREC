@@ -56,7 +56,7 @@
                 android:layout_height="0dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
-android:background="#fff"
+android:background="@drawable/shape3"
                 android:orientation="vertical">
 
 
