@@ -21,9 +21,9 @@ public class coursesexpand extends AppCompatActivity {
         setContentView(R.layout.activity_coursesexpand);
 
         final TextView intro = (TextView) findViewById(R.id.rscit);
-        final TextView contact1 = (TextView) findViewById(R.id.hard);
-        final TextView gallery1 = (TextView) findViewById(R.id.pmkvy);
-        final TextView tally1 = (TextView) findViewById(R.id.tally);
+        final TextView contact1 = (TextView) findViewById(R.id.tally);
+        final TextView gallery1 = (TextView) findViewById(R.id.hard);
+        final TextView tally1 = (TextView) findViewById(R.id.pmkvy);
         final TextView pwd1 = (TextView) findViewById(R.id.pwd);
 
         int test1[] = new int[2];
@@ -36,10 +36,10 @@ public class coursesexpand extends AppCompatActivity {
         ValueAnimator d = ObjectAnimator.ofFloat(tally1, "x", -10, 60).setDuration(1000);
         ValueAnimator e = ObjectAnimator.ofFloat(pwd1, "x", -10, 60).setDuration(1000);
 
-        b.setStartDelay(300);
-        c.setStartDelay(500);
-        d.setStartDelay(700);
-        e.setStartDelay(900);
+        b.setStartDelay(200);
+        c.setStartDelay(400);
+        d.setStartDelay(600);
+        e.setStartDelay(800);
 
         ValueAnimator c1 = ObjectAnimator.ofFloat(gallery1, "alpha", 0, 1).setDuration(1500);
         ValueAnimator a1 = ObjectAnimator.ofFloat(intro, "alpha", 0, 1).setDuration(1500);
@@ -70,7 +70,7 @@ public class coursesexpand extends AppCompatActivity {
             public void run() {
                 tally1.setVisibility(View.VISIBLE);
             }
-        }, 750);
+        }, 900);
         pwd1.postDelayed(new Runnable() {
             public void run() {
                 pwd1.setVisibility(View.VISIBLE);
