@@ -24,10 +24,9 @@
             android:id="@+id/contactsurface"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="405dp"
             android:transitionName="@string/fab1"
 
-            android:background="@drawable/shape3"
+            android:background="@drawable/shape30"
             android:orientation="vertical">
 
             <TextView
@@ -35,11 +34,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
                 android:text="CONTACT US"
                 android:textColor="#a1a1a1"
-
+android:id="@+id/ch"
                 android:textSize="40sp"
                 android:textStyle="bold"
 
