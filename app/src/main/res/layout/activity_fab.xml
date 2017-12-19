@@ -7,7 +7,7 @@
     android:id="@+id/activity_fab"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#80000000"
+    android:background="#80ffffff"
     android:onClick="back"
     tools:context="com.education.rajneesh.jrec.fab">
 
@@ -36,7 +36,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="sans-serif-condensed"
                 android:text="CONTACT US"
-                android:textColor="#a1a1a1"
+                android:textColor="#fff"
 android:id="@+id/ch"
                 android:textSize="40sp"
                 android:textStyle="bold"
@@ -55,8 +55,8 @@ android:id="@+id/ch"
                 android:foreground="@drawable/shape9"
                 android:hint="Name"
                 android:padding="8dp"
-                android:textColor="#000"
-                android:textColorHint="#000"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
                 android:textSize="15sp"
                 android:textStyle="italic" />
 
@@ -71,8 +71,8 @@ android:id="@+id/ch"
                 android:hint="Mobile Number"
                 android:inputType="number"
                 android:padding="8dp"
-                android:textColor="#000"
-                android:textColorHint="#000"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
                 android:textSize="15sp"
                 android:textStyle="italic" />
 
@@ -86,8 +86,8 @@ android:id="@+id/ch"
                 android:foreground="@drawable/shape9"
                 android:hint="Address"
                 android:padding="8dp"
-                android:textColor="#000"
-                android:textColorHint="#000"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
                 android:textSize="15sp"
                 android:textStyle="italic" />
 
@@ -104,8 +104,8 @@ android:id="@+id/ch"
                 android:hint="Query/Message"
                 android:inputType="textLongMessage"
                 android:padding="8dp"
-                android:textColor="#000"
-                android:textColorHint="#000"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
                 android:textSize="15sp"
                 android:textStyle="italic" />
 
@@ -115,12 +115,12 @@ android:id="@+id/ch"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="8dp"
-                android:backgroundTint="#000"
+                android:backgroundTint="#fff"
                 android:fontFamily="sans-serif-condensed"
                 android:text="send"
 
                 android:textAllCaps="true"
-                android:textColor="#ffffff"
+                android:textColor="#000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
