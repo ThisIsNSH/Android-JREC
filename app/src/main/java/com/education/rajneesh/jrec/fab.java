@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.net.Uri;
@@ -33,6 +34,9 @@ import android.widget.TextView;
 
 import static android.R.attr.animation;
 import static android.R.attr.text;
+import static com.education.rajneesh.jrec.R.id.contacts;
+import static com.education.rajneesh.jrec.R.id.gallery;
+import static com.education.rajneesh.jrec.R.id.history;
 import static com.education.rajneesh.jrec.R.layout.activity_fab;
 
 public class fab extends FragmentActivity {
@@ -198,9 +202,23 @@ public class fab extends FragmentActivity {
 
         }
 
-    public void back(View view)
-    {
 
+    @Override
+    public void onBackPressed() {
+        // Write your code here
+        final EditText myView = (EditText) findViewById(R.id.name);
+        final EditText myView1 = (EditText) findViewById(R.id.mobile);
+        final TextView text = (TextView) findViewById(R.id.ch);
+        final EditText myView2 = (EditText) findViewById(R.id.email);
+        final EditText myView3 = (EditText) findViewById(R.id.message);
+
+        ValueAnimator c1 = ObjectAnimator.ofFloat(gallery1, "alpha",1,0 ).setDuration(200);
+        ValueAnimator a1 = ObjectAnimator.ofFloat( intro, "alpha" ,1,0 ).setDuration(200);
+        ValueAnimator b1 = ObjectAnimator.ofFloat(contact1, "alpha", 1,0).setDuration(200);
+        c1.start();
+        b1.start();
+        a1.start();
+        super.onBackPressed();
 
     }
 
