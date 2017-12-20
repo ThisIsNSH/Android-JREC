@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -121,11 +122,14 @@ public class aboutexpand extends AppCompatActivity {
     public void back(View view){
 
         LinearLayout surface = (LinearLayout) findViewById(R.id.aboutussurface);
+        RelativeLayout c = (RelativeLayout) findViewById(R.id.backa);
         //TextView intro = (TextView) findViewById(R.id.introduction);
         //TextView detail = (TextView) findViewById(R.id.detail);
 
+        ObjectAnimator surfacea1 = ObjectAnimator.ofFloat(c,"alpha", 1,0).setDuration(300);
         ObjectAnimator surfacea = ObjectAnimator.ofFloat(surface,"alpha", 1,0).setDuration(300);
         surfacea.start();
+        surfacea1.start();
 /*
         ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(300);
 
