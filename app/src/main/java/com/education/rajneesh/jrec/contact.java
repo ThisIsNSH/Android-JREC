@@ -16,7 +16,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class contact extends AppCompatActivity {
 
@@ -88,8 +91,13 @@ public class contact extends AppCompatActivity {
             }
         });
 
+        TextView c = (TextView) findViewById(R.id.c);
+        TextView c1 = (TextView) findViewById(R.id.c1);
+        TextView l = (TextView) findViewById(R.id.l);
+        TextView l1 = (TextView) findViewById(R.id.l1);
 
 
+        
     }
 
 /*
