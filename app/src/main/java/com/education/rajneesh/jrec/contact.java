@@ -2,6 +2,7 @@ package com.education.rajneesh.jrec;
 
 import android.Manifest;
 import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -109,7 +110,7 @@ public class contact extends AppCompatActivity {
         ObjectAnimator e= ObjectAnimator.ofFloat(c1,"alpha", 0, 1 ).setDuration(1000);
         e.start();
         e.setStartDelay(0);
-        
+
         Animation j= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
         button.startAnimation(j);
         ObjectAnimator k= ObjectAnimator.ofFloat(button,"alpha", 0, 1 ).setDuration(1000);
@@ -136,7 +137,35 @@ public class contact extends AppCompatActivity {
         n.start();
         n.setStartDelay(0);
     }
+    @Override
+    public void onBackPressed() {
 
+        LinearLayout surface = (LinearLayout) findViewById(R.id.contact123);
+        //TextView intro = (TextView) findViewById(R.id.introduction);
+        //TextView detail = (TextView) findViewById(R.id.detail);
+
+        ObjectAnimator surfacea = ObjectAnimator.ofFloat(surface,"alpha", 1,0).setDuration(300);
+        surfacea.start();
+/*
+        ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(300);
+
+        ObjectAnimator detail2= ObjectAnimator.ofFloat(detail,"alpha", 0, 1 ).setDuration(300);
+
+
+
+
+        AnimatorSet anim = new AnimatorSet();
+        anim.playTogether(surfacea,intro2,detail2);
+anim.start();*/
+        surfacea.addListener(new AnimatorListenerAdapter() {
+            public void onAnimationEnd(Animator animation) {
+                //super.onBackPressed();
+                finish();
+            }});
+
+
+
+    }
 /*
     @Override
     public void onEnterAnimationComplete() {
