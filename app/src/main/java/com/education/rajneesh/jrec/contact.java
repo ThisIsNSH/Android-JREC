@@ -2,6 +2,7 @@ package com.education.rajneesh.jrec;
 
 import android.Manifest;
 import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -97,7 +98,37 @@ public class contact extends AppCompatActivity {
         TextView l1 = (TextView) findViewById(R.id.l1);
 
 
-        
+        Animation a= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        c.startAnimation(a);
+        ObjectAnimator b= ObjectAnimator.ofFloat(c,"alpha", 0, 1 ).setDuration(1000);
+        b.start();
+        b.setStartDelay(0);
+            
+        Animation intro1= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        intro.startAnimation(intro1);
+        ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(1000);
+        intro2.start();
+        intro2.setStartDelay(0);
+        Animation intro1= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        intro.startAnimation(intro1);
+        ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(1000);
+        intro2.start();
+        intro2.setStartDelay(0);
+        Animation intro1= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        intro.startAnimation(intro1);
+        ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(1000);
+        intro2.start();
+        intro2.setStartDelay(0);
+        Animation intro1= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        intro.startAnimation(intro1);
+        ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(1000);
+        intro2.start();
+        intro2.setStartDelay(0);
+        Animation intro1= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        intro.startAnimation(intro1);
+        ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(1000);
+        intro2.start();
+        intro2.setStartDelay(0);
     }
 
 /*
