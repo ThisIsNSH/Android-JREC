@@ -1,6 +1,8 @@
 package com.education.rajneesh.jrec;
 
 import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +10,7 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class hardware extends AppCompatActivity {
 
@@ -65,6 +68,35 @@ public class hardware extends AppCompatActivity {
         anim.start();
     }
 */
+@Override
+public void onBackPressed() {
+
+    LinearLayout surface = (LinearLayout) findViewById(R.id.hards1);
+   // TextView intro = (TextView) findViewById(R.id.introduction);
+    //TextView detail = (TextView) findViewById(R.id.detail);
+
+    ObjectAnimator surfacea = ObjectAnimator.ofFloat(surface,"alpha", 1,0).setDuration(300);
+    surfacea.start();
+/*
+        ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(300);
+
+        ObjectAnimator detail2= ObjectAnimator.ofFloat(detail,"alpha", 0, 1 ).setDuration(300);
+
+
+
+
+        AnimatorSet anim = new AnimatorSet();
+        anim.playTogether(surfacea,intro2,detail2);
+anim.start();*/
+    surfacea.addListener(new AnimatorListenerAdapter() {
+        public void onAnimationEnd(Animator animation) {
+            //super.onBackPressed();
+            finish();
+        }});
+
+
+
+}
 
     private void enterReveal() {
         LinearLayout rootLayout = (LinearLayout) findViewById(R.id.hards1);
