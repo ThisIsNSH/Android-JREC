@@ -34,7 +34,7 @@
             android:textColor="#04ABB6"
             android:textAllCaps="true"
             android:layout_marginTop="8dp"
-
+android:id="@+id/c"
             android:fontFamily="sans-serif-condensed"
             android:textSize="25sp"
             />
@@ -47,6 +47,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginLeft="28dp"
             android:textAllCaps="true"
+            android:id="@+id/c1"
             android:textColor="#6B6B6B"
             android:text="mobile: 9828275532 / 8005886307\nEMAIL:   jrec.singh@gmail.com"/>
 
@@ -76,6 +77,7 @@ android:id="@+id/contacts"
             android:textAllCaps="true"
             android:background="#F3F3F3"
             android:textColor="#04ABB6"
+            android:id="@+id/l"
             android:layout_marginTop="8dp"
             android:fontFamily="sans-serif-condensed"
             android:textSize="25sp"
@@ -89,6 +91,7 @@ android:id="@+id/contacts"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="28dp"
             android:textColor="#6B6B6B"
+            android:id="@+id/l1"
             android:text="JREC Computer Education\n58, Mamta Bhawan\nShiv Nagar, Police Line\nBaran Road, Kota-1, Rajasthan, India"/>
 
 

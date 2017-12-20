@@ -500,7 +500,7 @@
                 ads:backgroundTint="#000"
                 android:onClick="fabclick"
                 android:transitionName="@string/fab1"
-                ads:fabSize="mini"
+                ads:fabSize="normal"
                 ads:rippleColor="#fff" />
 
 </RelativeLayout>
