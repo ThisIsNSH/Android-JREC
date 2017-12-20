@@ -2,6 +2,8 @@ package com.education.rajneesh.jrec;
 
 import android.Manifest;
 import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -16,7 +18,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class contact extends AppCompatActivity {
 
@@ -88,10 +93,79 @@ public class contact extends AppCompatActivity {
             }
         });
 
+        TextView c = (TextView) findViewById(R.id.c);
+        TextView c1 = (TextView) findViewById(R.id.c1);
+        TextView l = (TextView) findViewById(R.id.l);
+        TextView l1 = (TextView) findViewById(R.id.l1);
+
+
+        Animation a= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        c.startAnimation(a);
+        ObjectAnimator b= ObjectAnimator.ofFloat(c,"alpha", 0, 1 ).setDuration(1000);
+        b.start();
+        b.setStartDelay(0);
+
+        Animation d= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        c1.startAnimation(d);
+        ObjectAnimator e= ObjectAnimator.ofFloat(c1,"alpha", 0, 1 ).setDuration(1000);
+        e.start();
+        e.setStartDelay(0);
+
+        Animation j= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        button.startAnimation(j);
+        ObjectAnimator k= ObjectAnimator.ofFloat(button,"alpha", 0, 1 ).setDuration(1000);
+        k.start();
+        k.setStartDelay(0);
+
+        Animation f= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        l.startAnimation(f);
+        ObjectAnimator g= ObjectAnimator.ofFloat(l,"alpha", 0, 1 ).setDuration(1000);
+        g.start();
+        g.setStartDelay(0);
+
+        Animation h= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        l1.startAnimation(h);
+        ObjectAnimator i= ObjectAnimator.ofFloat(l1,"alpha", 0, 1 ).setDuration(1000);
+        i.start();
+        i.setStartDelay(0);
+
+
+
+        Animation m= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        button1.startAnimation(m);
+        ObjectAnimator n= ObjectAnimator.ofFloat(button1,"alpha", 0, 1 ).setDuration(1000);
+        n.start();
+        n.setStartDelay(0);
+    }
+    @Override
+    public void onBackPressed() {
+
+        LinearLayout surface = (LinearLayout) findViewById(R.id.contact123);
+        //TextView intro = (TextView) findViewById(R.id.introduction);
+        //TextView detail = (TextView) findViewById(R.id.detail);
+
+        ObjectAnimator surfacea = ObjectAnimator.ofFloat(surface,"alpha", 1,0).setDuration(300);
+        surfacea.start();
+/*
+        ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(300);
+
+        ObjectAnimator detail2= ObjectAnimator.ofFloat(detail,"alpha", 0, 1 ).setDuration(300);
+
+
+
+
+        AnimatorSet anim = new AnimatorSet();
+        anim.playTogether(surfacea,intro2,detail2);
+anim.start();*/
+        surfacea.addListener(new AnimatorListenerAdapter() {
+            public void onAnimationEnd(Animator animation) {
+                //super.onBackPressed();
+                finish();
+            }});
+
 
 
     }
-
 /*
     @Override
     public void onEnterAnimationComplete() {
