@@ -109,6 +109,12 @@ public class contact extends AppCompatActivity {
         ObjectAnimator e= ObjectAnimator.ofFloat(c1,"alpha", 0, 1 ).setDuration(1000);
         e.start();
         e.setStartDelay(0);
+        
+        Animation j= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
+        button.startAnimation(j);
+        ObjectAnimator k= ObjectAnimator.ofFloat(button,"alpha", 0, 1 ).setDuration(1000);
+        k.start();
+        k.setStartDelay(0);
 
         Animation f= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
         l.startAnimation(f);
@@ -122,11 +128,7 @@ public class contact extends AppCompatActivity {
         i.start();
         i.setStartDelay(0);
 
-        Animation j= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
-        button.startAnimation(j);
-        ObjectAnimator k= ObjectAnimator.ofFloat(button,"alpha", 0, 1 ).setDuration(1000);
-        k.start();
-        k.setStartDelay(0);
+
 
         Animation m= AnimationUtils.loadAnimation(this, R.anim.translate_intro);
         button1.startAnimation(m);
