@@ -1,5 +1,7 @@
 package com.education.rajneesh.jrec;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -7,6 +9,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -141,8 +144,28 @@ public class coursesexpand extends AppCompatActivity {
         startActivity(intent);
     }
     public void back(View view){
-        Toast.makeText(this, "Use back button to go back!!",
-                Toast.LENGTH_LONG).show();
+        LinearLayout surface = (LinearLayout) findViewById(R.id.coursessurface);
+        //TextView intro = (TextView) findViewById(R.id.introduction);
+        //TextView detail = (TextView) findViewById(R.id.detail);
+
+        ObjectAnimator surfacea = ObjectAnimator.ofFloat(surface,"alpha", 1,0).setDuration(300);
+        surfacea.start();
+/*
+        ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(300);
+
+        ObjectAnimator detail2= ObjectAnimator.ofFloat(detail,"alpha", 0, 1 ).setDuration(300);
+
+
+
+
+        AnimatorSet anim = new AnimatorSet();
+        anim.playTogether(surfacea,intro2,detail2);
+anim.start();*/
+        surfacea.addListener(new AnimatorListenerAdapter() {
+            public void onAnimationEnd(Animator animation) {
+                //super.onBackPressed();
+                finish();
+            }});
     }
 
 
