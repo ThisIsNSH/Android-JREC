@@ -498,6 +498,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 ads:backgroundTint="#000"
+                android:src="@drawable/ic_menu_send"
                 android:onClick="fabclick"
                 android:transitionName="@string/fab1"
                 ads:fabSize="normal"
