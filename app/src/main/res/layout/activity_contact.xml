@@ -15,7 +15,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="100dp"
         android:layout_marginTop="100dp"
-        android:background="#F3F3F3"
+        android:background="@drawable/shape3"
         android:elevation="4dp"
         android:layout_centerVertical="true"
         android:orientation="vertical"
