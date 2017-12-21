@@ -11,106 +11,99 @@
         android:id="@+id/contact123"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
         android:layout_marginBottom="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="100dp"
         android:background="@drawable/shape3"
         android:elevation="4dp"
-        android:layout_centerVertical="true"
-        android:orientation="vertical"
-        >
-
-
+        android:orientation="vertical">
 
 
         <TextView
+            android:id="@+id/c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="contact"
             android:layout_marginLeft="18dp"
-            android:background="#fff"
-            android:textColor="#04ABB6"
-            android:textAllCaps="true"
             android:layout_marginTop="8dp"
-android:id="@+id/c"
+            android:background="#fff"
             android:fontFamily="sans-serif-condensed"
+            android:text="contact"
+            android:textAllCaps="true"
+            android:textColor="#04ABB6"
             android:textSize="25sp"
-            />
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/c1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:background="#fff"
-            android:layout_marginTop="8dp"
             android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:text="mobile: 9828275532 / 8005886307\nEMAIL:   jrec.singh@gmail.com"
             android:textAllCaps="true"
-            android:id="@+id/c1"
             android:textColor="#6B6B6B"
-            android:text="mobile: 9828275532 / 8005886307\nEMAIL:   jrec.singh@gmail.com"/>
+            android:textSize="15sp" />
 
         <Button
+            android:id="@+id/contacts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape6"
+            android:elevation="4dp"
+            android:onClick="contacts"
+            android:padding="4dp"
             android:text="call us"
             android:textAllCaps="true"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="8dp"
-            android:textSize="20sp"
-            android:background="@drawable/shape6"
             android:textColor="#ffffff"
-            android:padding="4dp"
-android:id="@+id/contacts"
-            android:elevation="4dp"
-            android:layout_marginBottom="16dp"
-            android:onClick="contacts"
-            />
+            android:textSize="20sp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="location"
-            android:layout_marginLeft="18dp"
-            android:textAllCaps="true"
-            android:background="#fff"
-            android:textColor="#04ABB6"
             android:id="@+id/l"
-            android:layout_marginTop="8dp"
-            android:fontFamily="sans-serif-condensed"
-            android:textSize="25sp"
-            />
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:background="#fff"
+            android:layout_marginLeft="18dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="28dp"
-            android:textColor="#6B6B6B"
+            android:background="#fff"
+            android:fontFamily="sans-serif-condensed"
+            android:text="location"
+            android:textAllCaps="true"
+            android:textColor="#04ABB6"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/l1"
-            android:text="JREC Computer Education\n58, Mamta Bhawan\nShiv Nagar, Police Line\nBaran Road, Kota-1, Rajasthan, India"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:text="JREC Computer Education\n58, Mamta Bhawan\nShiv Nagar, Police Line\nBaran Road, Kota-1, Rajasthan, India"
+            android:textColor="#6B6B6B"
+            android:textSize="15sp" />
 
 
         <Button
+            android:id="@+id/googlemaps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="find on google maps"
-            android:textAllCaps="true"
+            android:layout_marginBottom="16dp"
             android:layout_marginLeft="28dp"
             android:layout_marginTop="8dp"
-            android:textSize="20sp"
             android:background="@drawable/shape6"
-            android:textColor="#ffffff"
-            android:padding="4dp"
             android:elevation="4dp"
-            android:id="@+id/googlemaps"
-            android:layout_marginBottom="16dp"
             android:onClick="googlemaps"
-            />
+            android:padding="4dp"
+            android:text="find on google maps"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
     </LinearLayout>
 
 

@@ -12,131 +12,124 @@
         android:id="@+id/pwd1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape3"
-        android:elevation="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="64dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="64dp"
-        android:layout_marginBottom="64dp"
-        android:orientation="vertical"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:background="@drawable/shape3"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/shape3">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@drawable/shape3"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="18dp"
-                android:background="#fff"
-                android:fontFamily="sans-serif-condensed"
-
-
-
-
-                android:onClick="historyclick"
-                android:padding="4dp"
-                android:text="pwd courses"
-                android:textAllCaps="true"
-                android:textColor="#04ABB6"
-                android:textSize="25sp"
-
-                android:textStyle="bold" />
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#fff"
-
-                android:textColor="#6B6B6B"
-                android:textSize="20sp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="28dp"
-                android:layout_marginBottom="8dp"
-                android:text="Certified by Ministry of Skill Development and Enterpreneurship. The candidae will get Rs.175/per day in his/her aadhar linked bank account as per the attendance who complete the traning programme and is successfully certified. The amount will be refunded to every candidate who completes the training programme and is successfully certified. Minimum attendance is 80%. The candidate should not have undergone any other skill training course sponsored by Govt. of India."
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="18dp"
-                android:background="#fff"
-                android:fontFamily="sans-serif-condensed"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/shape3"
+                android:orientation="vertical">
 
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#fff"
+                    android:fontFamily="sans-serif-condensed"
 
 
-                android:onClick="historyclick"
-                android:padding="4dp"
-                android:text="Fees"
-                android:textAllCaps="true"
-                android:textColor="#04ABB6"
-                android:textSize="25sp"
+                    android:onClick="historyclick"
+                    android:padding="4dp"
+                    android:text="pwd courses"
+                    android:textAllCaps="true"
+                    android:textColor="#04ABB6"
+                    android:textSize="25sp"
 
-                android:textStyle="bold" />
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#fff"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
 
-                android:textColor="#6B6B6B"
-                android:textSize="20sp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="28dp"
-                android:layout_marginBottom="8dp"
-                android:text="Content Cost (to be given by Candidate at the beginning of training)"
-                />
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:background="#fff"
+                    android:text="Certified by Ministry of Skill Development and Enterpreneurship. The candidae will get Rs.175/per day in his/her aadhar linked bank account as per the attendance who complete the traning programme and is successfully certified. The amount will be refunded to every candidate who completes the training programme and is successfully certified. Minimum attendance is 80%. The candidate should not have undergone any other skill training course sponsored by Govt. of India."
+                    android:textColor="#6B6B6B"
+                    android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="18dp"
-                android:background="#fff"
-                android:fontFamily="sans-serif-condensed"
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#fff"
+                    android:fontFamily="sans-serif-condensed"
 
 
+                    android:onClick="historyclick"
+                    android:padding="4dp"
+                    android:text="Fees"
+                    android:textAllCaps="true"
+                    android:textColor="#04ABB6"
+                    android:textSize="25sp"
 
-                android:onClick="historyclick"
-                android:padding="4dp"
-                android:text="job role"
-                android:textAllCaps="true"
-                android:textColor="#04ABB6"
-                android:textSize="25sp"
+                    android:textStyle="bold" />
 
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#fff"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:background="#fff"
+                    android:text="Content Cost (to be given by Candidate at the beginning of training)"
+                    android:textColor="#6B6B6B"
+                    android:textSize="20sp" />
 
-                android:textColor="#6B6B6B"
-                android:textSize="20sp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="28dp"
-                android:layout_marginBottom="8dp"
-                android:text="1.CRM Domestic Non- Voice\n2.Domestic Data Entry Operator\n3.Telecom In Store Promoter\n4.Customer Care Executive(Call Center)\n5.Trainee Associate\nDomestic Biometric Data Operator."
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#fff"
+                    android:fontFamily="sans-serif-condensed"
 
 
-        </LinearLayout>
+                    android:onClick="historyclick"
+                    android:padding="4dp"
+                    android:text="job role"
+                    android:textAllCaps="true"
+                    android:textColor="#04ABB6"
+                    android:textSize="25sp"
 
-</ScrollView>
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:background="#fff"
+                    android:text="1.CRM Domestic Non- Voice\n2.Domestic Data Entry Operator\n3.Telecom In Store Promoter\n4.Customer Care Executive(Call Center)\n5.Trainee Associate\nDomestic Biometric Data Operator."
+                    android:textColor="#6B6B6B"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
     </LinearLayout>
 
 </RelativeLayout>

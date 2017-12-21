@@ -469,15 +469,15 @@
 
                 </LinearLayout>
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    android:textColor="#000"
-    android:layout_gravity="center"
-    android:fontFamily="sans-serif-condensed"
-    android:textAllCaps="true"
-    android:text="App made by Nishant Singh Hada"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="App made by Nishant Singh Hada"
+                    android:textAllCaps="true"
+                    android:textColor="#000" />
 
 
             </LinearLayout>
@@ -488,21 +488,21 @@
     </FrameLayout>
 
 
-            <android.support.design.widget.FloatingActionButton
+    <android.support.design.widget.FloatingActionButton
 
-                android:id="@+id/fab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:elevation="8dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                ads:backgroundTint="#000"
-                android:src="@drawable/ic_menu_send"
-                android:onClick="fabclick"
-                android:transitionName="@string/fab1"
-                ads:fabSize="normal"
-                ads:rippleColor="#fff" />
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:elevation="8dp"
+        android:onClick="fabclick"
+        android:src="@drawable/ic_menu_send"
+        android:transitionName="@string/fab1"
+        ads:backgroundTint="#000"
+        ads:fabSize="normal"
+        ads:rippleColor="#fff" />
 
 </RelativeLayout>
 
