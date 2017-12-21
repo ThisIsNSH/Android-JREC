@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="18dp"
-                android:background="#F3F3F3"
+                android:background="#fff"
                 android:fontFamily="sans-serif-condensed"
 
 android:id="@+id/introduction"
@@ -59,7 +59,7 @@ android:id="@+id/introduction"
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#F3F3F3"
+                android:background="#fff"
 android:id="@+id/detail"
                 android:textColor="#6B6B6B"
 android:textSize="20sp"
