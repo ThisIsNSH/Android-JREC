@@ -112,97 +112,102 @@
                             android:text="RSCIT-TALLY-hardware "
                             android:textAllCaps="true"
                             android:textColor="#0FE2F0"
-                            android:textSize="20sp"/>
+                            android:textSize="20sp" />
 
-                         </LinearLayout>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@id/mainsurface"
                         android:layout_margin="16dp"
                         android:background="@drawable/shape3"
-                        android:elevation="4dp"
-                        android:layout_height="150dp"
-                        android:layout_below="@id/mainsurface"/>
+                        android:elevation="4dp" />
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
-                        android:visibility="visible"
-                        android:elevation="5dp"
-android:scrollbars="none"
-                        android:layout_marginTop="16dp"
                         android:layout_below="@id/mainsurface"
-                        >
+                        android:layout_marginTop="16dp"
+                        android:elevation="5dp"
+                        android:scrollbars="none"
+                        android:visibility="visible">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="150dp">
+
                             <ImageView
+                                android:id="@+id/imag1eView"
                                 android:layout_width="32dp"
                                 android:layout_height="130dp"
+                                android:layout_gravity="center_vertical"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/digitalindia"
-                                android:layout_gravity="center_vertical"
-android:visibility="invisible"
-                                android:id="@+id/imag1eView" />
+                                android:visibility="invisible" />
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_gravity="center_vertical"
                                 android:background="@drawable/shape3"
-                                android:elevation="0dp"
-                                android:layout_gravity="center_vertical"
-                                android:layout_height="130dp">
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="110dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/digitalindia"
-                                android:layout_gravity="center_vertical"
-android:elevation="8dp"
-                                android:id="@+id/imageView" />
+                                android:elevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="110dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:elevation="8dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/digitalindia" />
                             </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="130dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape3"
+                            android:elevation="0dp">
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/nsdc" />
+                        </LinearLayout>
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="130dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/nsdc"
                                 android:layout_gravity="center_vertical"
-                                android:id="@+id/imageView2" />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="130dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/pmkvy"
-                                android:layout_gravity="center_vertical"
-                                />
+                                android:src="@drawable/pmkvy" />
 
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="130dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/rscit"
                                 android:layout_gravity="center_vertical"
-                                />
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/rscit" />
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="130dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/csc"
                                 android:layout_gravity="center_vertical"
-                                />
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/csc" />
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="130dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/tally"
                                 android:layout_gravity="center_vertical"
-                                />
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/tally" />
 
                         </LinearLayout>
                     </HorizontalScrollView>
