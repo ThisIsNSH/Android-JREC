@@ -127,8 +127,10 @@
                     <HorizontalScrollView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-android:visibility="invisible"
-                        android:layout_marginTop="8dp">
+                        android:visibility="visible"
+                        
+                        android:layout_below="@id/mainsurface"
+                        android:layout_marginTop="16dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
