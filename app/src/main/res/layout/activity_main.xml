@@ -126,16 +126,17 @@
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="150dp"
                         android:visibility="visible"
                         android:elevation="5dp"
-
+android:scrollbars="none"
+                        android:layout_marginTop="16dp"
                         android:layout_below="@id/mainsurface"
-                        android:layout_marginTop="25dp">
+                        >
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="150dp">
                             <ImageView
                                 android:layout_width="32dp"
                                 android:layout_height="130dp"
@@ -145,14 +146,21 @@
 android:visibility="invisible"
                                 android:id="@+id/imag1eView" />
 
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/shape3"
+                                android:elevation="0dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="130dp">
                             <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_height="130dp"
+                                android:layout_height="110dp"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/digitalindia"
                                 android:layout_gravity="center_vertical"
-
+android:elevation="8dp"
                                 android:id="@+id/imageView" />
+                            </LinearLayout>
 
 
                             <ImageView
