@@ -224,6 +224,13 @@
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/csc" />
                         </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="130dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape3"
+                            android:elevation="0dp">
 
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -231,6 +238,7 @@
                                 android:layout_gravity="center_vertical"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/tally" />
+                        </LinearLayout>
 
                         </LinearLayout>
                     </HorizontalScrollView>
