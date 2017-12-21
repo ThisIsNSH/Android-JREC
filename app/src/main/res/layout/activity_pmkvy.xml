@@ -12,102 +12,102 @@
         android:id="@+id/pmkvy1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/shape3"
         android:elevation="4dp"
-        android:layout_centerVertical="true"
-        android:orientation="vertical"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="64dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginRight="8dp">
+        android:orientation="vertical">
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/shape3">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@drawable/shape3"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:orientation="vertical">
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="18dp"
-                android:background="#F3F3F3"
-                android:fontFamily="sans-serif-condensed"
-
-
-
-
-                android:onClick="historyclick"
-                android:padding="4dp"
-                android:text="pmkvy"
-                android:textAllCaps="true"
-                android:textColor="#04ABB6"
-                android:textSize="25sp"
-
-                android:textStyle="bold" />
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:src="@drawable/pmkvy"
-    android:layout_margin="8dp"/>
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#F3F3F3"
-
-                android:textColor="#6B6B6B"
-                android:textSize="20sp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="28dp"
-                android:layout_marginBottom="8dp"
-                android:text="Approved for another four years (2016-2020) to benefit 10 million youth Allocated Budget 12,000 Crores Pradhan Mantri Kaushal Vikas Yojana (PMKVY) is the flagship scheme of the Ministry of Skill Development and Entrepreneurship (MSDE). The objective of this Skill Certification Scheme is to enable a large number of Indian youth to take up industry-relevant skill training that will help them in securing a better livelihood. Individuals with prior learning experience or skills will also be assessed and certified under Recognition of Prior Learning (RPL)."
-/>
-<!--     <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="18dp"
-                android:background="#F3F3F3"
-                android:fontFamily="sans-serif-condensed"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/shape3"
+                android:orientation="vertical">
 
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#fff"
+                    android:fontFamily="sans-serif-condensed"
 
 
-                android:onClick="historyclick"
-                android:padding="4dp"
-                android:text="fees"
-                android:textAllCaps="true"
-                android:textColor="#04ABB6"
-                android:textSize="25sp"
+                    android:onClick="historyclick"
+                    android:padding="4dp"
+                    android:text="pmkvy"
+                    android:textAllCaps="true"
+                    android:textColor="#04ABB6"
+                    android:textSize="25sp"
 
-                android:textStyle="bold" />
+                    android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#F3F3F3"
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/pmkvy" />
 
-                android:textColor="#6B6B6B"
-                android:textSize="20sp"
-                android:layout_marginLeft="28dp"
-                android:layout_marginRight="28dp"
-                android:layout_marginBottom="8dp"
-                android:text="Free"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="28dp"
+                    android:background="#fff"
+                    android:text="Approved for another four years (2016-2020) to benefit 10 million youth Allocated Budget 12,000 Crores Pradhan Mantri Kaushal Vikas Yojana (PMKVY) is the flagship scheme of the Ministry of Skill Development and Entrepreneurship (MSDE). The objective of this Skill Certification Scheme is to enable a large number of Indian youth to take up industry-relevant skill training that will help them in securing a better livelihood. Individuals with prior learning experience or skills will also be assessed and certified under Recognition of Prior Learning (RPL)."
+                    android:textColor="#6B6B6B"
+                    android:textSize="20sp" />
+                <!--     <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginLeft="18dp"
+                                android:background="#F3F3F3"
+                                android:fontFamily="sans-serif-condensed"
 
 
-                />
--->
-        </LinearLayout>
 
-    </ScrollView>
+
+                                android:onClick="historyclick"
+                                android:padding="4dp"
+                                android:text="fees"
+                                android:textAllCaps="true"
+                                android:textColor="#04ABB6"
+                                android:textSize="25sp"
+
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#F3F3F3"
+
+                                android:textColor="#6B6B6B"
+                                android:textSize="20sp"
+                                android:layout_marginLeft="28dp"
+                                android:layout_marginRight="28dp"
+                                android:layout_marginBottom="8dp"
+                                android:text="Free"
+
+
+                                />
+                -->
+            </LinearLayout>
+
+        </ScrollView>
     </LinearLayout>
 
 </RelativeLayout>

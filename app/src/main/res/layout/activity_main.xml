@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <FrameLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/shape5">
@@ -112,100 +112,168 @@
                             android:text="RSCIT-TALLY-hardware "
                             android:textAllCaps="true"
                             android:textColor="#0FE2F0"
-                            android:textSize="20sp"
+                            android:textSize="20sp" />
 
-                            />
-                        <!--
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginLeft="8dp"
-                                                android:layout_marginRight="8dp"
-
-                                                android:fontFamily="sans-serif-condensed"
-                                                android:text="We are since 16 years in computer education and with RKCL from 2009 we are giving education in RSCIT and other RKCL courses."
-                                                android:textAllCaps="false"
-                                                android:textColor="#000000"
-                                                android:textSize="20sp"
-                        android:textAlignment="center"
-                                                android:textStyle="italic" />-->
-
-
-                        <!--
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/digitalindia"
-                    android:layout_gravity="center_vertical"
-
-                    android:id="@+id/imageView" />
-
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/nsdc"
-                    android:layout_gravity="center_vertical"
-                    android:id="@+id/imageView2" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/pmkvy"
-                    android:layout_gravity="center_vertical"
-                   />
-
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/rscit"
-                    android:layout_gravity="center_vertical"
-                    />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/csc"
-                    android:layout_gravity="center_vertical"
-                   />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/tally"
-                    android:layout_gravity="center_vertical"
-                    />
-
-            </LinearLayout>
-        </HorizontalScrollView>-->
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_below="@id/mainsurface"
+                        android:layout_margin="16dp"
+                        android:visibility="gone"
+                        android:background="@drawable/shape3"
+                        android:elevation="4dp" />
 
-                </FrameLayout>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_below="@id/mainsurface"
+                        android:elevation="5dp"
+
+                        android:scrollbars="none"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/imag1eView"
+                                android:layout_width="25dp"
+                                android:layout_height="130dp"
+
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/digitalindia"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/shape31"
+                                android:elevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="180dp"
+                                    android:layout_height="110dp"
+                                    android:layout_gravity="center"
+                                    android:elevation="8dp"
+                                    android:layout_margin="5dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/digitalindia" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/shape31"
+                                android:elevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView2"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="110dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/nsdc" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/shape31"
+                                android:elevation="0dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="110dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/pmkvy" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/shape31"
+                                android:elevation="0dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="110dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/rscit" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/shape31"
+                                android:elevation="0dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="110dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/csc" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/shape31"
+                                android:elevation="0dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="110dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:padding="5dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/tally" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                </RelativeLayout>
 
                 <LinearLayout
                     android:id="@+id/aboutussurface"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
                     android:background="@drawable/shape3"
                     android:elevation="8dp"
 
@@ -306,8 +374,9 @@
                     android:id="@+id/coursessurface"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:background="@drawable/shape3"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"                    android:background="@drawable/shape3"
                     android:elevation="4dp"
                     android:orientation="vertical"
                     android:transitionName="@string/simple1">
@@ -404,8 +473,9 @@
                     android:id="@+id/paperssurface"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:background="@drawable/shape3"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"                    android:background="@drawable/shape3"
                     android:elevation="4dp"
                     android:orientation="vertical"
                     android:transitionName="@string/simple7">
@@ -469,15 +539,15 @@
 
                 </LinearLayout>
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    android:textColor="#000"
-    android:layout_gravity="center"
-    android:fontFamily="sans-serif-condensed"
-    android:textAllCaps="true"
-    android:text="App made by Nishant Singh Hada"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="32dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="App made by Nishant Singh Hada"
+                    android:textAllCaps="true"
+                    android:textColor="#000" />
 
 
             </LinearLayout>
@@ -488,21 +558,21 @@
     </FrameLayout>
 
 
-            <android.support.design.widget.FloatingActionButton
+    <android.support.design.widget.FloatingActionButton
 
-                android:id="@+id/fab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:elevation="8dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                ads:backgroundTint="#000"
-                android:src="@drawable/ic_menu_send"
-                android:onClick="fabclick"
-                android:transitionName="@string/fab1"
-                ads:fabSize="normal"
-                ads:rippleColor="#fff" />
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:elevation="8dp"
+        android:onClick="fabclick"
+        android:src="@drawable/ic_menu_send"
+        android:transitionName="@string/fab1"
+        ads:backgroundTint="#000"
+        ads:fabSize="normal"
+        ads:rippleColor="#fff" />
 
 </RelativeLayout>
 
