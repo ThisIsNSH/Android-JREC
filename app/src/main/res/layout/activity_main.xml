@@ -174,7 +174,7 @@
 
                             <ImageView
                                 android:layout_width="wrap_content"
-                                android:layout_height="150dp"
+                                android:layout_height="130dp"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/csc"
                                 android:layout_gravity="center_vertical"
