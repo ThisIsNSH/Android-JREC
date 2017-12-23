@@ -214,7 +214,6 @@ android:visibility="gone"
                                     android:layout_height="110dp"
                                     android:layout_gravity="center_vertical"
                                     android:padding="5dp"
-                                    android:scaleType="centerCrop"
                                     android:src="@drawable/pmkvy" />
 
                             </LinearLayout>
@@ -233,7 +232,6 @@ android:visibility="gone"
                                     android:layout_height="110dp"
                                     android:layout_gravity="center_vertical"
                                     android:padding="5dp"
-                                    android:scaleType="centerCrop"
                                     android:src="@drawable/rscit" />
                             </LinearLayout>
 
@@ -251,7 +249,6 @@ android:visibility="gone"
                                     android:layout_height="110dp"
                                     android:layout_gravity="center_vertical"
                                     android:padding="5dp"
-                                    android:scaleType="centerCrop"
                                     android:src="@drawable/csc" />
                             </LinearLayout>
 
@@ -269,7 +266,6 @@ android:visibility="gone"
                                     android:layout_height="110dp"
                                     android:layout_gravity="center_vertical"
                                     android:padding="5dp"
-                                    android:scaleType="centerCrop"
                                     android:src="@drawable/tally" />
                             </LinearLayout>
 
