@@ -60,6 +60,7 @@
                                 android:layout_gravity="center"
                                 android:layout_marginRight="8dp"
                                 android:text="JREC"
+                                android:fontFamily="monospace"
                                 android:textAllCaps="true"
                                 android:textColor="#04ABB6"
                                 android:textSize="75sp"
