@@ -130,7 +130,9 @@ android:visibility="gone"
                             android:layout_height="wrap_content"
                             android:text="know about fastag"
                             android:layout_below="@id/jrec"
+                            android:backgroundTint="@color/orange"
                             android:layout_gravity="center"
+
                             android:id="@+id/fastag"/>
 
                     </LinearLayout>
