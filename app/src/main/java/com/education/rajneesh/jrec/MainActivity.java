@@ -48,6 +48,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+Button fast1 = (Button) findViewById(R.id.fastag);
+fast1.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+        Intent intent = new Intent(MainActivity.this, fast.class);
+
+        startActivity(intent);
+    }
+});
+
 
 /*
         //.addTestDevice("0F4C93A8E4B31EC8591E468FB2BDE152")
