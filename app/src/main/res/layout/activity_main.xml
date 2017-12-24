@@ -132,7 +132,7 @@ android:visibility="gone"
                             android:layout_below="@id/jrec"
                             android:backgroundTint="@color/orange"
                             android:layout_gravity="center"
-
+                            android:textColor="#fff"
                             android:id="@+id/fastag"/>
 
                     </LinearLayout>
