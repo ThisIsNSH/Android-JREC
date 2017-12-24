@@ -22,19 +22,19 @@ android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:textSize="20sp"
             android:padding="8dp"
-            android:textColor="#000"
+            android:textColor="@color/darkorange"
             android:background="#fff"
             android:layout_height="wrap_content"
             android:text="SBI FASTag is a device that employs Radio Frequency Identification (RFID) technology for making toll payments directly from the prepaid or savings account linked to it.\n
-
+\n
 It is affixed on the windscreen of your vehicle and enables you to drive through toll plazas, without stopping for cash transactions.\n
-
+\n
 The tag can be purchased from Tag issuers and if it is linked to the prepaid account, then you need to recharge/ top up the tag as per your requirement.\n
-
+\n
 It is a 10x 5 cm, rectangle shape, multi layered tag, which is made out of good quality paper, containing chip and antenna inside its layers, it is pasted on the wind screen of the vehicle, and through Radio frequency identification method, the information is read at the toll plaza from the tag.\n
-
+\n
 Tag provides you with the convenience and ease during transit through the toll plaza along with saving time, fuel and money. SBI FASTag is presently operational at 346+ toll plazas across National Highways.\n
-
+\n
 The system is inter-operable and the same SBI FASTag can be used across all toll plazas under the National Electronic Toll Collection (NETC) program. More toll plazas will be brought under the NETC program in the future.\n"/>
     </LinearLayout>
 </ScrollView>
