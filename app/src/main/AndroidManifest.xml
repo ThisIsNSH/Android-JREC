@@ -55,7 +55,10 @@
         <activity
             android:name=".fab"
             android:theme="@style/Theme.AppCompat.Translucent1" />
-        <activity android:name=".fab1" android:theme="@style/Theme.AppCompat.Translucent2" ></activity>
+        <activity
+            android:name=".fab1"
+            android:theme="@style/Theme.AppCompat.Translucent2" />
+        <activity android:name=".fast"></activity>
     </application>
 
 </manifest>
