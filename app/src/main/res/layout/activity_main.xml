@@ -120,16 +120,21 @@ android:visibility="gone"
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="120dp"
+                            android:layout_marginTop="-16dp"
                             android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="-16dp"
                             android:layout_marginRight="16dp"
                             android:src="@drawable/fast"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="know about fastag"
+                            android:layout_below="@id/jrec"
+                            android:layout_gravity="center"
+                            android:id="@+id/fastag"/>
 
                     </LinearLayout>
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="know about fastag"
-                        android:id="@+id/fastag"/>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
