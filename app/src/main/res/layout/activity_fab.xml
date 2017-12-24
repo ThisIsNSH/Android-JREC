@@ -7,7 +7,7 @@
     android:id="@+id/activity_fab"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#80ffffff"
+    android:background="#80000000"
     android:onClick="back"
     tools:context="com.education.rajneesh.jrec.fab">
 
@@ -26,8 +26,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:transitionName="@string/fab1"
-
-            android:background="@drawable/shape30"
+android:padding="8dp"
+            android:background="#000"
             android:orientation="vertical">
 
             <TextView
