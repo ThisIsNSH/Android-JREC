@@ -62,7 +62,7 @@
                                 android:text="JREC"
                                 android:fontFamily="monospace"
                                 android:textAllCaps="true"
-                                android:textColor="#04ABB6"
+                                android:textColor="@color/darkorange"
                                 android:textSize="75sp"
                                 android:textStyle="bold"
 
@@ -83,7 +83,7 @@
                                     android:fontFamily="sans-serif-condensed"
                                     android:text="computer"
                                     android:textAllCaps="true"
-                                    android:textColor="#04ABB6"
+                                    android:textColor="@color/darkorange"
                                     android:textSize="30sp"
 
                                     android:textStyle="bold" />
@@ -97,7 +97,7 @@
                                     android:fontFamily="sans-serif-condensed"
                                     android:text="education"
                                     android:textAllCaps="true"
-                                    android:textColor="#04ABB6"
+                                    android:textColor="@color/darkorange"
                                     android:textSize="30sp"
 
                                     android:textStyle="bold" />
