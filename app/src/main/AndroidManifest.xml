@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="rajneesh.education.com.aboutus" />
+
         <activity
             android:name=".aboutus"
             android:theme="@style/Theme.AppCompat.Translucent" />
@@ -55,7 +55,11 @@
         <activity
             android:name=".fab"
             android:theme="@style/Theme.AppCompat.Translucent1" />
-        <activity android:name=".fab1" android:theme="@style/Theme.AppCompat.Translucent2" ></activity>
+        <activity
+            android:name=".fab1"
+            android:theme="@style/Theme.AppCompat.Translucent2" />
+        <activity android:name=".fast"
+            android:theme="@style/Theme.AppCompat.Translucent1"></activity>
     </application>
 
 </manifest>

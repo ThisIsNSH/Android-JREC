@@ -60,8 +60,9 @@
                                 android:layout_gravity="center"
                                 android:layout_marginRight="8dp"
                                 android:text="JREC"
+                                android:fontFamily="monospace"
                                 android:textAllCaps="true"
-                                android:textColor="#04ABB6"
+                                android:textColor="@color/darkorange"
                                 android:textSize="75sp"
                                 android:textStyle="bold"
 
@@ -82,7 +83,7 @@
                                     android:fontFamily="sans-serif-condensed"
                                     android:text="computer"
                                     android:textAllCaps="true"
-                                    android:textColor="#04ABB6"
+                                    android:textColor="@color/darkorange"
                                     android:textSize="30sp"
 
                                     android:textStyle="bold" />
@@ -96,7 +97,7 @@
                                     android:fontFamily="sans-serif-condensed"
                                     android:text="education"
                                     android:textAllCaps="true"
-                                    android:textColor="#04ABB6"
+                                    android:textColor="@color/darkorange"
                                     android:textSize="30sp"
 
                                     android:textStyle="bold" />
@@ -108,13 +109,34 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="-8dp"
-
-                            android:text="RSCIT-TALLY-hardware "
+android:visibility="gone"
+                            android:text="provide SBI Fastag\nthrough csc"
                             android:textAllCaps="true"
-                            android:textColor="#0FE2F0"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/orange"
                             android:textSize="20sp" />
 
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="-16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="-16dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/fast"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="know about fastag"
+                            android:layout_below="@id/jrec"
+                            android:backgroundTint="@color/orange"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:id="@+id/fastag"/>
+
                     </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -148,6 +170,27 @@
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/digitalindia"
                                 android:visibility="gone" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:layout_marginLeft="8dp"
+                                android:visibility="gone"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/shape31"
+                                android:elevation="0dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView0"
+                                    android:layout_width="180dp"
+                                    android:layout_height="110dp"
+                                    android:layout_gravity="center"
+                                    android:elevation="8dp"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/fast" />
+                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -202,7 +245,6 @@
                                     android:layout_height="110dp"
                                     android:layout_gravity="center_vertical"
                                     android:padding="5dp"
-                                    android:scaleType="centerCrop"
                                     android:src="@drawable/pmkvy" />
 
                             </LinearLayout>
@@ -221,7 +263,6 @@
                                     android:layout_height="110dp"
                                     android:layout_gravity="center_vertical"
                                     android:padding="5dp"
-                                    android:scaleType="centerCrop"
                                     android:src="@drawable/rscit" />
                             </LinearLayout>
 
@@ -239,7 +280,6 @@
                                     android:layout_height="110dp"
                                     android:layout_gravity="center_vertical"
                                     android:padding="5dp"
-                                    android:scaleType="centerCrop"
                                     android:src="@drawable/csc" />
                             </LinearLayout>
 
@@ -257,7 +297,6 @@
                                     android:layout_height="110dp"
                                     android:layout_gravity="center_vertical"
                                     android:padding="5dp"
-                                    android:scaleType="centerCrop"
                                     android:src="@drawable/tally" />
                             </LinearLayout>
 
