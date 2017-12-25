@@ -17,24 +17,10 @@
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="wrap_content">
 
-        <LinearLayout
 
-            android:id="@+id/mainsurface"
-            android:layout_width="match_parent"
-
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-
-            android:orientation="vertical">
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="8dp">
 
                 <TextView
                     android:id="@+id/jrec"
@@ -51,24 +37,20 @@
 
                     />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-
+android:layout_marginTop="16dp"
                         android:layout_toRightOf="@+id/jrec"
                         android:fontFamily="sans-serif-condensed"
                         android:text="computer"
                         android:textAllCaps="true"
                         android:textColor="#fff"
                         android:textSize="30sp"
-
+android:id="@+id/computer"
                         android:textStyle="" />
 
                     <TextView
@@ -76,6 +58,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="-11dp"
+                        android:layout_below="@id/computer"
                         android:layout_toRightOf="@+id/jrec"
                         android:fontFamily="sans-serif-condensed"
                         android:text="education"
@@ -84,8 +67,7 @@
                         android:textSize="30sp"
 
                         android:textStyle="" />
-                </LinearLayout>
-            </LinearLayout>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -95,13 +77,15 @@
                 android:text="provide SBI Fastag\nthrough csc"
                 android:textAlignment="center"
                 android:textAllCaps="true"
+
+                android:layout_below="@id/jrec"
                 android:textColor="@color/orange"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:visibility="gone" />
 
 
-        </LinearLayout>
+
 
 
     </RelativeLayout>
