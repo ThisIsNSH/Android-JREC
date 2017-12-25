@@ -8,6 +8,11 @@
     android:background="#ffffff"
     tools:context="com.education.rajneesh.jrec.MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+       android:background="@drawable/bluebg" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +39,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/shape5">
+                    >
 
                     <LinearLayout
 
