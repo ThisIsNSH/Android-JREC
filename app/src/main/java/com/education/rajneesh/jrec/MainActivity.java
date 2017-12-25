@@ -192,7 +192,6 @@ fast1.setOnClickListener(new View.OnClickListener() {
         LinearLayout courses = (LinearLayout) findViewById(R.id.coursessurface);
       //  FrameLayout adtwo = (FrameLayout) findViewById(R.id.ad2);
         LinearLayout question = (LinearLayout) findViewById(R.id.paperssurface);
-        LinearLayout main = (LinearLayout) findViewById(R.id.mainsurface);
 
 
         Animation aboutus1 = AnimationUtils.loadAnimation(this, R.anim.translate);
@@ -240,10 +239,10 @@ fast1.setOnClickListener(new View.OnClickListener() {
 
         Animation main1 = AnimationUtils.loadAnimation(this, R.anim.translate);
         main1.setStartOffset(0);
-        ObjectAnimator main2 = ObjectAnimator.ofFloat(main, "alpha", 0, 1).setDuration(1500);
-        main2.start();
-        main2.setStartDelay(0);
-        main.startAnimation(main1);
+      //  ObjectAnimator main2 = ObjectAnimator.ofFloat(main, "alpha", 0, 1).setDuration(1500);
+        //main2.start();
+        //main2.setStartDelay(0);
+        //main.startAnimation(main1);
 
     }
 

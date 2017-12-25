@@ -2,8 +2,8 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">#0Fa0DE</item>
         <item name="colorAccent">@color/colorAccent</item>
         <!-- specify enter and exit transitions -->
 
