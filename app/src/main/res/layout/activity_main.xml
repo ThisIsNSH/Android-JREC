@@ -316,7 +316,7 @@
                         android:id="@+id/aboutusimage"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:foreground="#80000000"
+                        android:foreground="#80303F9F"
 
                         android:scaleType="centerCrop"
                         android:src="@drawable/aboutus" />
@@ -418,7 +418,7 @@
                         android:id="@+id/coursesimage"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:foreground="#80000000"
+                        android:foreground="#80303F9F"
                         android:scaleType="centerCrop"
                         android:src="@drawable/courses" />
 
@@ -518,7 +518,7 @@
                         android:id="@+id/paperimage"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:foreground="#80000000"
+                        android:foreground="#80303F9F"
                         android:scaleType="centerCrop"
                         android:src="@drawable/paper" />
 
