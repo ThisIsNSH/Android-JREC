@@ -13,21 +13,111 @@
         android:layout_height="250dp"
        android:background="@drawable/bluebg" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"
+            >
+
+            <LinearLayout
+
+                android:id="@+id/mainsurface"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/jrec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:text="JREC"
+                        android:fontFamily="monospace"
+                        android:textAllCaps="true"
+                        android:textColor="#fff"
+                        android:textSize="75sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:layout_toRightOf="@+id/jrec"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="computer"
+                            android:textAllCaps="true"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+
+                            android:textStyle="" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-11dp"
+                            android:layout_toRightOf="@+id/jrec"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="education"
+                            android:textAllCaps="true"
+                            android:textColor="#fff"
+                            android:textSize="30sp"
+
+                            android:textStyle="" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-8dp"
+                    android:visibility="gone"
+                    android:text="provide SBI Fastag\nthrough csc"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:textSize="20sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
 
         <ScrollView
 
             android:layout_width="match_parent"
-
+android:layout_below="@id/header"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
+
             android:scrollbars="none">
 
 
@@ -36,101 +126,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
 
-                    <LinearLayout
-
-                        android:id="@+id/mainsurface"
-                        android:layout_width="match_parent"
-
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-
-                        android:orientation="vertical">
-
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="8dp">
-
-                            <TextView
-                                android:id="@+id/jrec"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginRight="8dp"
-                                android:text="JREC"
-                                android:fontFamily="monospace"
-                                android:textAllCaps="true"
-                                android:textColor="#fff"
-                                android:textSize="75sp"
-                                android:textStyle="bold"
-
-                                />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-
-                                    android:layout_toRightOf="@+id/jrec"
-                                    android:fontFamily="sans-serif-condensed"
-                                    android:text="computer"
-                                    android:textAllCaps="true"
-                                    android:textColor="#fff"
-                                    android:textSize="30sp"
-
-                                    android:textStyle="" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginTop="-11dp"
-                                    android:layout_toRightOf="@+id/jrec"
-                                    android:fontFamily="sans-serif-condensed"
-                                    android:text="education"
-                                    android:textAllCaps="true"
-                                    android:textColor="#fff"
-                                    android:textSize="30sp"
-
-                                    android:textStyle="" />
-                            </LinearLayout>
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="-8dp"
-android:visibility="gone"
-                            android:text="provide SBI Fastag\nthrough csc"
-                            android:textAllCaps="true"
-                            android:textAlignment="center"
-                            android:textStyle="bold"
-                            android:textColor="@color/orange"
-                            android:textSize="20sp" />
-
-
-
-                    </LinearLayout>
-
-
-
-
-
-                </RelativeLayout>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -603,7 +599,6 @@ android:visibility="gone"
 
         </ScrollView>
 
-    </FrameLayout>
 
 
     <android.support.design.widget.FloatingActionButton
