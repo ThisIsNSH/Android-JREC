@@ -69,20 +69,7 @@ android:id="@+id/computer"
                         android:textStyle="" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="-8dp"
-                android:text="provide SBI Fastag\nthrough csc"
-                android:textAlignment="center"
-                android:textAllCaps="true"
 
-                android:layout_below="@id/jrec"
-                android:textColor="@color/orange"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:visibility="gone" />
 
 
 
@@ -103,6 +90,24 @@ android:id="@+id/computer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:text="DIRECTOR RAjneesh singh rana "
+                android:layout_marginBottom="16dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@id/jrec"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:visibility="visible" />
+
 
 <LinearLayout
     android:layout_width="match_parent"
