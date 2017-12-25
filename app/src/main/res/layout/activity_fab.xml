@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:transitionName="@string/fab1"
 android:padding="8dp"
-            android:background="#000"
+            android:background="@drawable/shape30"
             android:orientation="vertical">
 
             <TextView
