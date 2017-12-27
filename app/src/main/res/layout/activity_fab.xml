@@ -39,7 +39,7 @@ android:padding="8dp"
                 android:fontFamily="sans-serif-condensed"
                 android:text="CONTACT US"
                 android:textColor="#fff"
-android:id="@+id/ch"
+                android:id="@+id/ch"
                 android:textSize="40sp"
                 android:textStyle="bold"
 
