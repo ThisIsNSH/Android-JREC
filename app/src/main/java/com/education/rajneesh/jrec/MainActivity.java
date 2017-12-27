@@ -374,8 +374,8 @@ fast1.setOnClickListener(new View.OnClickListener() {
 
 
     //SHARED ELEMENT TRANSTION paperexpand
-  /*  public void paperexpand(View view) {
-
+    public void paperexpand(View view) {
+/*
         // Ordinary Intent for launching a new activity
         Intent intent = new Intent(this, paperexpand.class);
 
@@ -396,10 +396,14 @@ fast1.setOnClickListener(new View.OnClickListener() {
         Toast.makeText(MainActivity.this, "Scroll down for more courses",
                 Toast.LENGTH_LONG).show();
 
-
+*/
+        String url = "https://drive.google.com/drive/folders/1ojRVGsqLRm2yjTvRwYv6YEbMV3uWuGlw?usp=sharing";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 
-        public void info2(View view){
+  /*      public void info2(View view){
     Toast.makeText(MainActivity.this, "Developer: Nishant Singh Hada    WhatsApp: 9560705734",
             Toast.LENGTH_LONG).show();
 
