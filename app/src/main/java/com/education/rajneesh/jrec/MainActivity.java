@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-        /*pic2.setOnClickListener(new View.OnClickListener(){
+        pic2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
             {
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
-        });
+        });/*
         pic3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
