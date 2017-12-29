@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
-        });/*
+        });
         pic4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
-        });*/
+        });
 
 Button fast1 = (Button) findViewById(R.id.fastag);
 fast1.setOnClickListener(new View.OnClickListener() {
