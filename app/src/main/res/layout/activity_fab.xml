@@ -7,7 +7,7 @@
     android:id="@+id/activity_fab"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#80000000"
+    android:background="#60000000"
     android:onClick="back"
     tools:context="com.education.rajneesh.jrec.fab">
 

@@ -213,7 +213,7 @@
                         android:elevation="0dp">
 
                         <ImageView
-                            android:id="@+id/imageView2"
+                            android:id="@+id/skillpic"
 
                             android:layout_width="wrap_content"
                             android:layout_height="110dp"
@@ -233,7 +233,7 @@
 
                         <ImageView
                             android:layout_width="wrap_content"
-
+android:id="@+id/pmkvypic"
                             android:layout_height="110dp"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
@@ -251,7 +251,7 @@
 
                         <ImageView
                             android:layout_width="wrap_content"
-
+android:id="@+id/rscitpic"
                             android:layout_height="110dp"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
@@ -285,7 +285,7 @@
 
                         <ImageView
                             android:layout_width="wrap_content"
-
+android:id="@+id/tallypic"
                             android:layout_height="110dp"
                             android:layout_gravity="center_vertical"
                             android:padding="5dp"
