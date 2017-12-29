@@ -48,6 +48,49 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
+        ImageView pic1 = (ImageView) findViewById(R.id.tallypic);
+        ImageView pic2 = (ImageView) findViewById(R.id.skillpic);
+        ImageView pic3 = (ImageView) findViewById(R.id.pmkvypic);
+        ImageView pic4 = (ImageView) findViewById(R.id.rscitpic);
+
+        pic1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(MainActivity.this,tally.class);
+                startActivity(intent);
+            }
+
+        });
+        /*pic2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(MainActivity.this,pwd.class);
+                startActivity(intent);
+            }
+
+        });
+        pic3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(MainActivity.this,pmkvy.class);
+                startActivity(intent);
+            }
+
+        });
+        pic4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(MainActivity.this,rscit.class);
+                startActivity(intent);
+            }
+
+        });*/
+
 Button fast1 = (Button) findViewById(R.id.fastag);
 fast1.setOnClickListener(new View.OnClickListener() {
     @Override
