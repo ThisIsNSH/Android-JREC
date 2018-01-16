@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrec;
+package com.education.rajneesh.jrecapp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 public class hardware extends AppCompatActivity {
 

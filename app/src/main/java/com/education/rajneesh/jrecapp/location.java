@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrec;
+package com.education.rajneesh.jrecapp;
 
 import android.content.Intent;
 import android.net.Uri;

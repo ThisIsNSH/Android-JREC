@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrec;
+package com.education.rajneesh.jrecapp;
 import android.graphics.PointF;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;

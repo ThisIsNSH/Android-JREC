@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrec;
+package com.education.rajneesh.jrecapp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -6,23 +6,17 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Intent;
-import android.support.v4.animation.ValueAnimatorCompat;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 
-import static com.education.rajneesh.jrec.R.id.contacts;
-import static com.education.rajneesh.jrec.R.id.gallery;
-import static com.education.rajneesh.jrec.R.id.history;
+import static com.education.rajneesh.jrecapp.R.id.contacts;
+import static com.education.rajneesh.jrecapp.R.id.gallery;
+import static com.education.rajneesh.jrecapp.R.id.history;
 
 public class aboutexpand extends AppCompatActivity {
 

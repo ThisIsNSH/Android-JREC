@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.education.rajneesh.jrec">
+    package="com.education.rajneesh.jrecapp">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.education.rajneesh.com.education.jrecapp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,45 +20,45 @@
         </activity>
 
         <activity
-            android:name=".aboutus"
+            android:name="com.education.rajneesh.com.education.jrecapp.aboutus"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".location"
+            android:name="com.education.rajneesh.com.education.jrecapp.location"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".contact"
+            android:name="com.education.rajneesh.com.education.jrecapp.contact"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".coursesexpand"
+            android:name="com.education.rajneesh.com.education.jrecapp.coursesexpand"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".aboutexpand"
+            android:name="com.education.rajneesh.com.education.jrecapp.aboutexpand"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".gallery"
+            android:name="com.education.rajneesh.com.education.jrecapp.gallery"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".rscit"
+            android:name="com.education.rajneesh.com.education.jrecapp.rscit"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".tally"
+            android:name="com.education.rajneesh.com.education.jrecapp.tally"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".hardware"
+            android:name="com.education.rajneesh.com.education.jrecapp.hardware"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".pmkvy"
+            android:name="com.education.rajneesh.com.education.jrecapp.pmkvy"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".pwd"
+            android:name="com.education.rajneesh.com.education.jrecapp.pwd"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".fab"
+            android:name="com.education.rajneesh.com.education.jrecapp.fab"
             android:theme="@style/Theme.AppCompat.Translucent1" />
         <activity
-            android:name=".fab1"
+            android:name="com.education.rajneesh.com.education.jrecapp.fab1"
             android:theme="@style/Theme.AppCompat.Translucent2" />
-        <activity android:name=".fast"
+        <activity android:name="com.education.rajneesh.com.education.jrecapp.fast"
             android:theme="@style/Theme.AppCompat.Translucent1"></activity>
     </application>
 

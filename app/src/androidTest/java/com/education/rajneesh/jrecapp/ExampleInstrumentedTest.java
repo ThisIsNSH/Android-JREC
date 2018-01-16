@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrec;
+package com.education.rajneesh.jrecapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

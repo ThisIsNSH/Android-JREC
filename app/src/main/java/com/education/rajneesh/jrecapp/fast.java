@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrec;
+package com.education.rajneesh.jrecapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

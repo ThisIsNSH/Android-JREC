@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrec;
+package com.education.rajneesh.jrecapp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -12,13 +12,14 @@ import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class pwd extends AppCompatActivity {
+public class tally extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pwd);
-        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.pwd1);
+        setContentView(R.layout.activity_tally);
+
+         LinearLayout rootLayout = (LinearLayout) findViewById(R.id.tally1);
         if (savedInstanceState == null) {
             rootLayout.setVisibility(View.INVISIBLE);
 
@@ -27,7 +28,7 @@ public class pwd extends AppCompatActivity {
                 viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
                     @Override
                     public void onGlobalLayout() {
-                        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.pwd1);
+                        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.tally1);
                         enterReveal();
                         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
                             rootLayout.getViewTreeObserver().removeGlobalOnLayoutListener(this);
@@ -38,12 +39,13 @@ public class pwd extends AppCompatActivity {
                 });
             }
         }
+
     }
 
     @Override
     public void onBackPressed() {
 
-        LinearLayout surface = (LinearLayout) findViewById(R.id.pwd1);
+        LinearLayout surface = (LinearLayout) findViewById(R.id.tally1);
         TextView intro = (TextView) findViewById(R.id.introduction);
         TextView detail = (TextView) findViewById(R.id.detail);
 
@@ -69,9 +71,12 @@ anim.start();*/
 
 
     }
- /*   @Override
+/*
+    @Override
     public void onEnterAnimationComplete() {
         enterReveal();
+        overridePendingTransition(fade,fade);
+
         // RunAnimations();
         super.onEnterAnimationComplete();
     }
@@ -79,7 +84,7 @@ anim.start();*/
     void enterReveal() {
         // previously invisible view
 
-        final LinearLayout myView = (LinearLayout) findViewById(R.id.pwd1);
+        final LinearLayout myView = (LinearLayout) findViewById(R.id.tally1);
 
         // get the center for the clipping circle
         int cx = myView.getMeasuredWidth() / 2;
@@ -95,13 +100,11 @@ anim.start();*/
         // make the view visible and start the animation
         myView.setVisibility(View.VISIBLE);
         anim.start();
-    }
-
-*/
+    }*/
 
 
     private void enterReveal() {
-        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.pwd1);
+        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.tally1);
         int cx = rootLayout.getWidth() / 2;
         int cy = rootLayout.getHeight() / 2;
 
@@ -109,7 +112,7 @@ anim.start();*/
 
         // create the animator for this view (the start radius is zero)
         Animator circularReveal = ViewAnimationUtils.createCircularReveal(rootLayout, cx, cy, 0, finalRadius);
-        circularReveal.setDuration(600);
+        circularReveal.setDuration(300);
 
         // make the view visible and start the animation
         rootLayout.setVisibility(View.VISIBLE);

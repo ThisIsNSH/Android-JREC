@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrec;
+package com.education.rajneesh.jrecapp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -12,11 +12,6 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import static com.education.rajneesh.jrec.R.id.contacts;
-import static com.education.rajneesh.jrec.R.id.gallery;
-import static com.education.rajneesh.jrec.R.id.history;
 
 public class coursesexpand extends AppCompatActivity {
 

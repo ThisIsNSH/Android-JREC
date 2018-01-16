@@ -1,43 +1,23 @@
-package com.education.rajneesh.jrec;
+package com.education.rajneesh.jrecapp;
 
 import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.net.Uri;
-import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
-import android.transition.Explode;
-import android.util.Log;
-import android.view.MotionEvent;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.ViewAnimationUtils;
-import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import static android.R.attr.animation;
-import static android.R.attr.text;
-import static com.education.rajneesh.jrec.R.id.contacts;
-import static com.education.rajneesh.jrec.R.id.gallery;
-import static com.education.rajneesh.jrec.R.id.history;
-import static com.education.rajneesh.jrec.R.layout.activity_fab;
+import static com.education.rajneesh.jrecapp.R.layout.activity_fab;
 
 public class fab extends FragmentActivity {
 
