@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.education.rajneesh.jrecapp">
+    package="com.education.rajneesh.nishant">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.education.rajneesh.com.education.jrecapp.MainActivity">
+        <activity android:name="com.education.rajneesh.nishant.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,45 +20,45 @@
         </activity>
 
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.aboutus"
+            android:name="com.education.rajneesh.nishant.aboutus"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.location"
+            android:name="com.education.rajneesh.nishant.location"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.contact"
+            android:name="com.education.rajneesh.nishant.contact"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.coursesexpand"
+            android:name="com.education.rajneesh.nishant.coursesexpand"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.aboutexpand"
+            android:name="com.education.rajneesh.nishant.aboutexpand"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.gallery"
+            android:name="com.education.rajneesh.nishant.gallery"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.rscit"
+            android:name="com.education.rajneesh.nishant.rscit"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.tally"
+            android:name="com.education.rajneesh.nishant.tally"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.hardware"
+            android:name="com.education.rajneesh.nishant.hardware"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.pmkvy"
+            android:name="com.education.rajneesh.nishant.pmkvy"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.pwd"
+            android:name="com.education.rajneesh.nishant.pwd"
             android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.fab"
+            android:name="com.education.rajneesh.nishant.fab"
             android:theme="@style/Theme.AppCompat.Translucent1" />
         <activity
-            android:name="com.education.rajneesh.com.education.jrecapp.fab1"
+            android:name="com.education.rajneesh.nishant.fab1"
             android:theme="@style/Theme.AppCompat.Translucent2" />
-        <activity android:name="com.education.rajneesh.com.education.jrecapp.fast"
+        <activity android:name="com.education.rajneesh.nishant.fast"
             android:theme="@style/Theme.AppCompat.Translucent1"></activity>
     </application>
 

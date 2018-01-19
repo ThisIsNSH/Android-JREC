@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion '27.0.2'
     defaultConfig {
-        applicationId "com.education.rajneesh.jrec1"
+        applicationId "com.education.rajneesh.nishant"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 2

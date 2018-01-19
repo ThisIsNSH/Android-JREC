@@ -1,24 +1,23 @@
-package com.education.rajneesh.jrecapp;
+package com.education.rajneesh.nishant;
 
 import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.ObjectAnimator;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewTreeObserver;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-public class pmkvy extends AppCompatActivity {
+public class gallery extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pmkvy);
-        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.pmkvy1);
+        setContentView(R.layout.activity_gallery);
+        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.gallery123);
         if (savedInstanceState == null) {
             rootLayout.setVisibility(View.INVISIBLE);
 
@@ -27,7 +26,7 @@ public class pmkvy extends AppCompatActivity {
                 viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
                     @Override
                     public void onGlobalLayout() {
-                        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.pmkvy1);
+                        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.gallery123);
                         enterReveal();
                         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
                             rootLayout.getViewTreeObserver().removeGlobalOnLayoutListener(this);
@@ -39,46 +38,18 @@ public class pmkvy extends AppCompatActivity {
             }
         }
     }
-    @Override
-    public void onBackPressed() {
-
-        LinearLayout surface = (LinearLayout) findViewById(R.id.pmkvy1);
-        TextView intro = (TextView) findViewById(R.id.introduction);
-        TextView detail = (TextView) findViewById(R.id.detail);
-
-        ObjectAnimator surfacea = ObjectAnimator.ofFloat(surface,"alpha", 1,0).setDuration(300);
-        surfacea.start();
 /*
-        ObjectAnimator intro2= ObjectAnimator.ofFloat(intro,"alpha", 0, 1 ).setDuration(300);
-
-        ObjectAnimator detail2= ObjectAnimator.ofFloat(detail,"alpha", 0, 1 ).setDuration(300);
-
-
-
-
-        AnimatorSet anim = new AnimatorSet();
-        anim.playTogether(surfacea,intro2,detail2);
-anim.start();*/
-        surfacea.addListener(new AnimatorListenerAdapter() {
-            public void onAnimationEnd(Animator animation) {
-                //super.onBackPressed();
-                finish();
-            }});
-
-
-
-    }
- /*   @Override
+    @Override
     public void onEnterAnimationComplete() {
         enterReveal();
-        // RunAnimations();
+        //RunAnimations();
         super.onEnterAnimationComplete();
     }
 
     void enterReveal() {
         // previously invisible view
 
-        final LinearLayout myView = (LinearLayout) findViewById(R.id.pmkvy1);
+        final LinearLayout myView = (LinearLayout) findViewById(R.id.gallery123);
 
         // get the center for the clipping circle
         int cx = myView.getMeasuredWidth() / 2;
@@ -95,12 +66,11 @@ anim.start();*/
         myView.setVisibility(View.VISIBLE);
         anim.start();
     }
-
 */
 
 
     private void enterReveal() {
-        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.pmkvy1);
+        LinearLayout rootLayout = (LinearLayout) findViewById(R.id.gallery123);
         int cx = rootLayout.getWidth() / 2;
         int cy = rootLayout.getHeight() / 2;
 
@@ -114,5 +84,28 @@ anim.start();*/
         rootLayout.setVisibility(View.VISIBLE);
         circularReveal.start();
     }
+    private void RunAnimations() {
 
+
+        Animation a = AnimationUtils.loadAnimation(this, R.anim.fadein);
+  /*  a.reset();
+    logoImage = (ImageView) findViewById(R.id.dopescrawl);
+    logoImage.setBackgroundResource(R.drawable.dopesplash);
+    logoAnimation = (AnimationDrawable)  logoImage.getBackground();
+    logoImage.clearAnimation();
+    logoImage.startAnimation(a);
+    */
+        a = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        a.reset();
+        LinearLayout title = (LinearLayout) findViewById(R.id.gallery123);
+        title.setVisibility(View.VISIBLE);
+        title.clearAnimation();
+        title.startAnimation(a);
+
+
+
+
+
+        //logoAnimation.start();
+    }
 }

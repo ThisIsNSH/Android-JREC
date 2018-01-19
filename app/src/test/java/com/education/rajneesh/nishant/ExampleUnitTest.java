@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrecapp;
+package com.education.rajneesh.nishant;
 
 import org.junit.Test;
 

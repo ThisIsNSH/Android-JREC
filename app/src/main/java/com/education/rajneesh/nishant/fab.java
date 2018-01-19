@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrecapp;
+package com.education.rajneesh.nishant;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -17,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import static com.education.rajneesh.jrecapp.R.layout.activity_fab;
+import static com.education.rajneesh.nishant.R.layout.activity_fab;
 
 public class fab extends FragmentActivity {
 

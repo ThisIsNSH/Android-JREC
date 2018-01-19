@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     android:background="#60000000"
     android:onClick="back"
-    tools:context="com.education.rajneesh.jrecapp.fab">
+    tools:context="com.education.rajneesh.nishant.fab">
 
 
     <ScrollView

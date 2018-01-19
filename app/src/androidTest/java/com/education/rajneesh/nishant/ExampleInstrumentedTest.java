@@ -1,4 +1,4 @@
-package com.education.rajneesh.jrecapp;
+package com.education.rajneesh.nishant;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.rajneesh.jrec", appContext.getPackageName());
+        assertEquals("com.education.rajneesh.nishant", appContext.getPackageName());
     }
 }
